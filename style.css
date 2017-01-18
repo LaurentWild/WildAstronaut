@@ -1,0 +1,22 @@
+html {
+	padding:10px;
+}
+body {
+	background-color: #efefef;
+}
+#baner {
+	margin-top: 150px;
+	background-color: #a0a0a0;
+}
+#baner h3 {
+	font-size: 25px;
+	margin:0;
+	padding:5px;
+}
+#logo {
+    position: absolute;
+    top: -135px;
+    left: 15px;
+    bottom: 0;
+    right: 0;
+}
