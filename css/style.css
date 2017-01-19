@@ -1,12 +1,17 @@
 html {
 	padding:10px;
+	font-family: "Century Gothic"
 }
 body {
 	background-color: #efefef;
 }
+header {
+	background: url("imgs/bg-header.jpg");
+	margin-bottom: 55px;
+}
 #baner {
-	margin-top: 150px;
-	background-color: #a0a0a0;
+	margin-top: 160px;
+	background-color: #dcd121;
 }
 #baner h3 {
 	font-size: 25px;
@@ -15,15 +20,32 @@ body {
 }
 #logo {
     position: absolute;
-    top: -135px;
+    top: 15px;
     left: 15px;
     bottom: 0;
     right: 0;
 }
+h1#title {
+    position: absolute;
+    top: 88px;
+    left: 146px;
+    bottom: 0;
+    right: 0;
+	font-weight: 900;
+	letter-spacing: -0.03em;
+	color: white;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+#plus {
+	height: 25px;
+}
+
+
 
 /*  Le parti presentation */
 #presentation{
-	background-image: url("ecailles.png");
+	background-image: url("imgs/ecailles.png");
 	background-repeat: repeat;
 	margin-top: 100px;
 }
