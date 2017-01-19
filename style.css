@@ -20,3 +20,32 @@ body {
     bottom: 0;
     right: 0;
 }
+
+/*  Le parti presentation */
+#presentation{
+	background-image: url("ecailles.png");
+	background-repeat: repeat;
+	margin-top: 100px;
+}
+/*  Chaque parti de presentation */
+#article{
+	border: 1px red;
+	padding-top: 30px;
+}
+/*  Le photo des presentation */
+.pres1{
+	border: 10px double green;
+	border-radius: 50%;
+}
+/*  Le titre des presentation */
+.titre-pres{
+	font-size: 30px;
+	text-align: center;
+	color: #424242;
+}
+/*  Le text des presentation */
+.text-pres{
+	text-align: justify;
+	font-size: 20px;
+	color: #424242;
+}
