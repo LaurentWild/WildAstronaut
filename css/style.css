@@ -6,7 +6,7 @@ body {
 	background-color: #efefef;
 }
 header {
-	background: url("imgs/bg-header.jpg");
+	background: url("./imgs/bg-header.jpg");
 	margin-bottom: 55px;
 }
 #baner {
