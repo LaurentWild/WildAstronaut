@@ -8,7 +8,7 @@ html {
 
 body {
 	background-color: #45454b!important;
-	font-family: "Century Gothic"!important;
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif !important;
 	color: #4d4d4d !important;
 }
 .container{
@@ -104,6 +104,7 @@ ul#nav li{
 	color: #0e0d17;
 	text-transform:uppercase;
 	text-align:left;
+	margin-top:40px;
 }
 .align-right{
 	text-align:left;
