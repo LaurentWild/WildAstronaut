@@ -78,22 +78,20 @@ ul#nav li{
 }
 
 
+
 /*  Le parti presentation */
 #presentation{
+<<<<<<< HEAD
 	width:100%;
 	height:auto;
 	display:block;
 	position:relative;
+	margin-top: 100px;
 }
 /*  Chaque parti de presentation */
 #article{
 	border: 1px red;
 	padding-top: 30px;
-}
-/*  Le photo des presentation */
-.pres1{
-	border: 10px double green;
-	border-radius: 50%;
 }
 /*  Le titre des presentation */
 .titre-pres{
@@ -111,4 +109,20 @@ ul#nav li{
 	text-align: justify;
 	font-size: 1.2em;
 	color: #424242;
+}
+#baner2 {
+	margin-top: 50px;
+	margin-bottom: 25px;
+	background-color: #a0a0a0;
+}
+.img{
+	margin-bottom: 4px;
+}
+
+/*ARTICLES*/
+.margintop {
+	margin-top: 13px;
+}
+.margin-xs {
+	height: 13px;
 }
