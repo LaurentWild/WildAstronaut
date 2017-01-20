@@ -73,4 +73,54 @@ h1#title {
 	text-align: justify;
 	font-size: 20px;
 	color: #424242;
+
+}
+
+/** traitement footer **/
+#pied1{
+	background-color: #242331;
+}
+.imgfooter{
+	
+	padding: 15px 15px 15px 15px;
+	
+}
+#adresse{
+	color: white;
+	text-align: center;
+/**	padding-top: 5%;
+	margin-right: 5%
+	margin-top: 10%;**/
+}
+
+@media screen and (max-width: 980px) {
+    #adresse {
+        ;
+    }
+    .social{
+	margin-top: 20%;
+	margin-bottom: 25%;
+	margin-left: 5%;
+	vertical-align: center;
+	}
+	.buttonsocial{
+		width: 150%;
+		margin-top: 30%;
+		
+	}
+}
+#pied2{
+	background-color: grey;
+}
+.social{
+	margin-top: 5%;
+	margin-bottom: 8.75%;
+	margin-left: -1%;
+	vertical-align: center;
+
+}
+.buttonsocial{
+	width: 100%;
+	margin-top: 25%;
+	
 }
