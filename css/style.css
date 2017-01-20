@@ -78,3 +78,11 @@ h1#title {
 .img{
 	margin-bottom: 4px;
 }
+
+/*ARTICLES*/
+.margintop {
+	margin-top: 13px;
+}
+.margin-xs {
+	height: 13px;
+}
