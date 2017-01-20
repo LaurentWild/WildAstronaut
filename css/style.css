@@ -1,56 +1,89 @@
 html {
 	padding:10px;
-	font-family: "Century Gothic"
 }
+
 body {
-	background-color: #efefef;
+	background-color: #45454b!important;
+	font-family: "Century Gothic"!important;
+	color: #4d4d4d !important;
+}
+.container{
+	background-color:#ffffff;
+	padding-left:0!important;
+	padding-right:0!important;
 }
 header {
-	background: url("../imgs/bg-header.jpg");
-	margin-bottom: 55px;
+	background: url("../imgs/bg-header.jpg") top right;
+	height:205px;
+	display:block;
+	position:relative;
 }
-#baner {
-	margin-top: 160px;
-	background-color: #dcd121;
-	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7) inset;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  	-moz-box-shadow:    0 0 10px rgba(0, 0, 0, 0.7) inset;  /* Firefox 3.5 - 3.6 */
-  	box-shadow:         0 0 10px rgba(0, 0, 0, 0.7) inset;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-}
-#baner h3 {
-	font-size: 25px;
-	margin:0;
-	padding:5px;
-}
+
 #logo {
-    position: absolute;
-    top: 15px;
+    position: relative;
+	display:inline-block;
+	width:40%;
+    top: 25px;
     left: 15px;
     bottom: 0;
     right: 0;
+	z-index:100;
 }
-h1#title {
+
+#logo h1 {
     position: absolute;
-    top: 88px;
-    left: 146px;
-    bottom: 0;
-    right: 0;
+	display:inline-block;
+	margin:0;
+	padding:0;
+    bottom: 42%;
+    left: 136px;
 	font-weight: 900;
-	letter-spacing: -0.03em;
 	color: white;
 	font-size: 35px;
 	text-transform: uppercase;
 }
-#plus {
-	height: 25px;
+
+#banner {
+	display:block;
+	width:100%;
+	min-height:45px;
+	position:absolute;
+	bottom:0px;
+	padding:6px 10%;
+	text-align:right;
+	background-color: #d4cb3d;
+	z-index:10;
+	-webkit-box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.5) inset;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  	   -moz-box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.5) inset;  /* Firefox 3.5 - 3.6 */
+  	             box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.5) inset;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
+ul#nav{
+	display:inline-block;
+	margin:0;
+	margin-bottom:0px !important;
+	padding:2px 0 0 30%;
+}
+ul#nav li{
+	margin:0;
+	padding:0 10px	;
+	float:left;
+	color: #0e0d17;
+	text-transform:uppercase;
+	font-size:1.3em!important;
+	font-weight:bold;
+	color:#0e0d17;
+	letter-spacing:2px;
+    list-style-type: none;
+}
 
 
 /*  Le parti presentation */
 #presentation{
-	background-image: url("imgs/ecailles.png");
-	background-repeat: repeat;
-	margin-top: 100px;
+	width:100%;
+	height:auto;
+	display:block;
+	position:relative;
 }
 /*  Chaque parti de presentation */
 #article{
@@ -64,13 +97,18 @@ h1#title {
 }
 /*  Le titre des presentation */
 .titre-pres{
-	font-size: 30px;
+	font-size: 1.7em;
 	text-align: center;
-	color: #424242;
+	color: #0e0d17;
+	text-transform:uppercase;
+	text-align:left;
+}
+.align-right{
+	text-align:left;
 }
 /*  Le text des presentation */
 .text-pres{
 	text-align: justify;
-	font-size: 20px;
+	font-size: 1.2em;
 	color: #424242;
 }
