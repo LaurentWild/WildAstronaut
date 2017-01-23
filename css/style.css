@@ -86,8 +86,16 @@ ul#nav li{
 	height:auto;
 	display:block;
 	position:relative;
-	margin-top: 100px;
+	margin-top: 50px;
 }
+#presentation img{
+	width:100%;
+	max-width:230px;
+	position:relative;
+	bottom:-20px;
+}
+
+
 /*  Chaque parti de presentation */
 #article{
 	border: 1px red;
@@ -116,8 +124,17 @@ ul#nav li{
 	margin-bottom: 25px;
 	background-color: #a0a0a0;
 }
-.img{
-	margin-bottom: 4px;
+.img-padding{
+	padding-left:1px !important;
+	padding-right:1px !important;
+	padding-top:1px !important;
+	padding-bottom:1px !important;
+}
+
+
+.rowAdjust{
+	margin-left:0!important;
+	margin-right:0!important;
 }
 
 /*ARTICLES*/
@@ -129,7 +146,7 @@ ul#nav li{
 }
 
 /** traitement footer **/
-#footer {
+footer {
 	margin-top:10px;
 }
 #pied1{
