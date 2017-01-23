@@ -1,5 +1,6 @@
 html {
 	padding:10px;
+	padding-bottom: 35px;
 }
 
 body {
@@ -85,7 +86,7 @@ ul#nav li{
 	height:auto;
 	display:block;
 	position:relative;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 #presentation img{
 	width:100%;
