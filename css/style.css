@@ -18,6 +18,7 @@ header {
 	height:205px;
 	display:block;
 	position:relative;
+	margin-bottom: 50px;
 }
 
 #logo {
@@ -86,7 +87,6 @@ ul#nav li{
 	height:auto;
 	display:block;
 	position:relative;
-	margin-top: 50px;
 }
 #presentation img{
 	width:100%;
