@@ -153,16 +153,26 @@ footer {
 	background-color: #242331;
 }
 .imgfooter{
-	
-	padding: 15px 15px 15px 15px;
-	
+	margin-top: 15%;
+	margin-left: 5%;
+	vertical-align: center;
+	width: 100%;
+}
+.lineyellow1{
+	background: #b0a934;
+	height:10px;
+}
+.lineyellow2{
+    background-image: linear-gradient(to left, yellow, rgba(176, 169, 52, 1));
+    height: 10px;
 }
 #adresse{
 	color: white;
 	text-align: center;
-/**	padding-top: 5%;
+	padding-top: 5%;
 	margin-right: 5%
-	margin-top: 10%;**/
+	margin-top: 10%;
+	margin-bottom: 12.85%;
 }
 
 @media screen and (max-width: 980px) {
@@ -178,7 +188,7 @@ footer {
 	.buttonsocial{
 		width: 150%;
 		margin-top: 30%;
-		
+
 	}
 }
 #pied2{
@@ -194,5 +204,5 @@ footer {
 .buttonsocial{
 	width: 100%;
 	margin-top: 25%;
-	
+
 }
