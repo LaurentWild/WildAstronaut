@@ -1,0 +1,217 @@
+---
+1
+ISS : la sortie de Thomas Pesquet dans l'espace fut un grand succès
+La première sortie dans l’espace de Thomas Pesquet, le 13 janvier, d’une durée de près de six heures, s’est très bien passée, avec la réalisation de la totalité des tâches planifiées et six autres complémentaires. Cette première EVA pour Thomas, mais la 197e activité extravéhiculaire réalisée depuis l’ISS, a suscité un très fort engouement auprès du grand public.
+-
+Pour sa première sortie extra-véhiculaire, la quatrième d'un Français depuis Jean-Loup Chrétien en 1988, Thomas a parfaitement accompli sa mission d'une durée de 5 heures et 58 minutes, le vendredi 13 janvier. Avec son co-équipier Shane Kimbrough (l'astronaute de la Nasa qui est le commandant actuel à bord de l'ISS), les deux astronautes ont notamment remplacé des batteries lithium-ion afin d'améliorer l'approvisionnement en énergie de la station. Ces batteries, qui doivent durer dix ans, sont désormais connectées aux 2.500 m² de panneaux solaires qui alimentent en énergie la Station et prennent leur relais lorsqu'elle se trouve dans l'ombre de la Terre. Et la nuit tombe vite sur l'ISS. Le complexe orbital tourne autour de la Terre en 90 minutes, ce qui implique une alternance toutes les 45 minutes du jour et de la nuit.
+Une tâche réalisée bien plus vite que planifiée, de sorte que les deux astronautes ont pu procéder à des activités dites complémentaires, dont le remplacement d'une caméra défectueuse, installée sur le bras robotique et divers autres composants. Ils ont également réalisé des prises de vue d'un certain nombre de pièces de la Station à des fins de contrôle.
+---
+---
+2
+Vie sur Mars : des bactéries productrices de méthane survivraient sans problème
+-
+Depuis plusieurs décennies, les microbiologistes testent les limites des organismes terrestres dans des conditions martiennes. Plusieurs études menées avec des bactéries méthanogènes montrent qu'elles pourraient prospérer dans un tel environnement. Elles constitueraient donc des explications crédibles aux traces de méthane découvertes dans l'atmosphère de Mars.
+-
+La découverte de traces de méthane dans l'atmosphère de Mars en 2004 a renouvelé les spéculations sur la présence de la vie sur la planète rouge. En effet, ce gaz ne devrait pas subsister longtemps dans l'atmosphère martienne ce qui implique qu'une source quelconque en renouvelle le contenu. Parmi les origines possibles, celle qui fascine le plus est évidemment sous forme de micro-organismes qui seraient des cousins des méthanogènes terrestres. Ce sont des archées qui peuvent prospérer dans des environnements extrêmes comme les déserts, les glaces du Groenland et même les geysers et les évents hydrothermaux. Pour se développer, ils n'ont besoin que du gaz carbonique et de l'hydrogène comme source d'énergie car ce ne sont pas des organismes photoautotrophes (effectuant la photosynthèse), mais bien chimiotrophes. Anaérobies, ils sont donc capables de prospérer dans des milieux anoxiques, sans oxygène, et dépourvus de matière organique. En clair, il s'agit bien d'extrêmophiles et les chercheurs se sont bien sûr demandé s'ils ne seraient pas capables de survivre sur Mars.
+
+Au début de son histoire, Mars était nettement plus accueillante, avec de vastes étendues d'eau liquide et un volcanisme actif, à l'instar de la jeune Terre. La vie aurait donc très bien pu y apparaître et prendre le temps de s'adapter à des conditions devenant lentement de plus en plus difficiles. Tout comme des méthanogènes terrestres existent dans le sol, et même à grande profondeur dans les roches, certains descendants des premiers micro-organismes martiens similaires pourraient encore exister, et cela peut-être au voisinage des volcans martiens. Ce serait donc leur activité productrice de méthane qui serait détectée aujourd'hui par les sondes martiennes.
+
+---
+---
+3
+La glace interstellaire a-t-elle favorisé l'apparition de la vie ?
+-
+Alors que l'observation d'autres systèmes planétaires bat son plein, l'exobiologie est à la recherche des clés de l'apparition de la vie. En 2008, une étude originale montrait que la glace enrobant les grains de poussières des nuages interstellaires pourrait jouer un rôle important.
+-
+L'eau nous semble banale mais pour les physiciens et les chimistes, elle est une des substances les plus mystérieuses et les plus étranges de l’Univers et recèle encore bien des secrets. Un colloque organisé en 2008 par la European Science Foundation (ESF) fut l'occasion de le rappeler pour des chercheurs comme Julyan Cartwright et C. Ignacio Sainz-Diaz, tous deux membres de l'Institut des Sciences de la Terre Andalouse de l'université de Grenade en Espagne.
+
+À l'aide d'un microscope électronique à balayage, les deux chercheurs ont étudié la structure des films de glace composant la gangue des particules de poussières interstellaires portées à des températures entre 3 et 90 K, c'est-à-dire celles qui règnent dans les nuages moléculaires et les globules de Bok. Il s'agissait de l'application de techniques issues de la physique mésoscopique dans le domaine de la matière condensée, correspondant à des échelles un peu plus grandes que celles des atomes et des molécules dans des semiconducteurs ou des céramiques par exemple.
+
+---
+---
+4
+Vénus : l'étrange image transmise par Akatsuki serait une onde de gravité
+-
+L'atmosphère de Vénus ne cesse de nous surprendre. L'étrange structure transitoire observée en 2015 par la sonde japonaise Akatsuki serait en fait un analogue géant des ondes de gravité observées dans l'atmosphère terrestre.
+--
+Quand la sonde Akatsuki de la Jaxa, l'Agence spatiale japonaise, est arrivée en orbite le 7 décembre 2015, elle a pu constater l'existence d'une étrange structure dans l'atmosphère de la planète observée dans l'infrarouge. Celle-ci se présentait sous la forme d'un arc brillant long d'environ 10.000 kilomètres et présent à une altitude d'environ 64 kilomètres (voir article ci-dessous pour en savoir plus). Observé pendant quatre jours, cet arc est resté stable par rapport à la topographie de Vénus, s'étirant parallèlement au terminateur de l'étoile du Berger. Voilà qui est a priori très surprenant.
+
+En effet, l'atmosphère de Vénus est en état de super-rotation. L'Homme s'en est rendu compte à partir des années 1960, lorsque la vitesse de rotation de Vénus sur elle-même a été déterminée au radar depuis la Terre et que les missions spatiales ont permis de mieux mesurer les vitesses des vents dans son atmosphère. Ces derniers dépassent les 300 km/h. L'atmosphère fait ainsi le tour de Vénus en environ quatre jours alors que la vitesse de rotation de la planète sur elle-même est particulièrement lente : un jour vénusien dure environ 243 jours terrestres.
+
+Imaginons par exemple que l'arc observé par Akatsuki soit un gigantesque panache émis par une éruption volcanique. Clairement, il aurait dû être rapidement emporté et étalé sur toute la planète. Quel pouvait donc bien être la nature de cet arc ? Un groupe de chercheurs japonais vient de publier un article dans Nature Geoscience qui suggère une explication plausible.
+
+---
+---
+5
+Proxima b, l’exoplanète la plus proche du Soleil
+-
+Impossible de ne pas mentionner Proxima b, l'exoplanète la plus proche de notre Système solaire. Sa découverte a été annoncée cet été. Un peu plus grosse que la Terre, elle gravite autour de l'étoile voisine Proxima du Centaure (la plus petite des trois qui composent le système triple Alpha du Centaure), à seulement 4,2 années-lumière. Cerise sur le gâteau, elle se situe dans la zone habitable de son soleil, une naine rouge. La réalité rejoint la fiction.
+-
+Les exoplanètes sont des planètes qui ne tournent pas autour du Soleil, elles tournent autour d'une autre étoile. On parle aussi de planètes extrasolaires.
+La question des exoplanètes est très ancienne dans l’astronomie. Leur existence est pour la première fois attestée de façon indirecte dans les années 1990. Futura-Sciences a rencontré Jean-Pierre Luminet, astrophysicien de renom, afin qu’il nous parle plus en détail de ce passionnant sujet.
+En 1995 fut découverte la première planète extrasolaire à l'Observatoire de Haute-Provence (Mayor et Queloz). En avril 2005, 155 planètes extrasolaires étaient connues. On détecte des exoplanètes grâce à deux méthodes : la méthode du transit planétaire et la méthode des vitesses radiales.
+
+---
+---
+6
+A la recherche des origines de la vie dans l'espace interstellaire
+-
+Une équipe française a réussi à reproduire en laboratoire les conditions de formation de molécules organiques complexes entrant dans la fabrication des briques du vivant.
+-
+Une découverte réalisée en France renforce l'idée que la vie a pu apparaître sur Terre grâce à un ensemencement de molécules organiques plus ou moins complexes venues de l'espace. Une expérience menée entre l'Institut d'astrophysique spatiale (IAS) à l'université Paris Sud et l'Institut de chimie de Nice à l'université de Nice-Sophia Antipolis a trouvé que deux molécules carbonées, des sucres, dont on pense qu'elles pourraient intervenir dans la formation de l'ARN, une molécule cruciale du matériel génétique, pouvaient se former dans les conditions régnant dans les grands nuages de gaz interstellaires.
+
+Pour reproduire cette chimie si spéciale existant dans l'immensité des espaces séparant les étoiles, les chercheurs d'Orsay ont gelé à basse température un mélange très simple comprenant de l'eau, du méthanol et de l'ammoniaque. Trois composants observés dans les nuages à l'origine de la formation des étoiles. Cette glace a ensuite été exposée pendant une durée variant entre une semaine et un mois à un flux de rayons ultraviolets, correspondant aux UV émis par les étoiles environnantes. L'énergie apportée par ce flux lumineux «produit dans ces glaces très froides un type de chimie qu'on ne retrouve pas à l'état naturel sur Terre», précise Louis Le Sergeant d'Hendecourt, directeur de recherche CNRS à l'Institut d'astrophysique spatiale à Orsay et l'un des auteurs de la publication parue ce lundi dans les Comptes rendus de l'Académie américaine des sciences (Pnas).
+
+---
+---
+7
+Gene Cernan, dernier homme à avoir marché sur la Lune
+-
+L’astronaute américain Gene Cernan avait participé en décembre 1972 à l'ultime mission du programme lunaire, Apollo 17. Il vient de mourir à l’âge de 82 ans. 
+
+Alors qu’il se tient au pied du vaisseau Challenger, ce 14 décembre 1972, Gene Cernan est le dernier homme à quitter la surface lunaire. Son équipier Harrison Schmitt l’attend déjà à bord et il sait qu’il est le dernier à fouler le sol de la Lune avant longtemps. Il déclare : « Alors que nous quittons la Lune ici, à Taurus-Littrow, nous partons comme nous sommes venus, si Dieu le veut, et comme nous devrions revenir, avec paix et espoir pour toute l’humanité. »
+
+Depuis Apollo 17, 44 ans se sont écoulés et aucun humain n’est revenu sur la Lune. Et Gene Cernan, qui vient de mourir à l’âge de 82 ans, n’aura pas vu ne serait-ce que l’amorce d’un nouveau programme d’exploration lunaire.
+
+
+8
+---
+---
+Les indices d’une planète autour de TW Hydrae
+-
+ Une ombre projetée sur le nuage de gaz et de poussières gravitant autour d’une étoile de la constellation de l’Hydre intrigue les chercheurs. Elle pourrait indiquer la présence d’une planète géante sur une orbite similaire à celle de la Terre autour du Soleil.
+
+L’équipe de John H. Debes pourrait bien avoir découvert indirectement une nouvelle planète autour de la jeune étoile TW Hydrae grâce aux observations du télescope Hubble. En analysant 17 ans de clichés, les chercheurs ont remarqué la présence d’une ombre qui parcourt en 16 ans le nuage de poussières et de gaz gravitant autour de l’astre (aussi appelé disque protoplanétaire).
+
+Selon eux, c’est là l’indice d’une planète de masse semblable à Jupiter mais proche de son étoile, dont la gravité déforme le disque protoplanétaire. La partie interne du disque ainsi attiré projetterait son ombre sur la zone non affectée par le corps céleste.
+
+Cette hypothèse est appuyée par les résultats récents de Sean Andrews qui distingue sur des images de l’environnement de l’étoile, prises par le réseau d’antennes Alma (Atamaca Large Millimeter Array), plusieurs structures circulaires peu denses, dont une très proche du centre, qui pourraient être des zones de formation planétaire.
+
+---
+---
+10
+Origine de la Lune : une nouvelle théorie peu convaincante
+-
+ Un nouveau scénario de formation de la Lune publié dans la revue “Nature Geoscience” laisse entendre qu’il surmonte les difficultés des précédents. Mais en réalité, cette solution très médiatisée apporte à ce domaine de recherche plus de problèmes que de solutions.
+
+La Lune serait née non pas d’une collision entre la Terre et une protoplanète, mais d’une vingtaine de collisions avec des corps un peu moins gros. Telle est la théorie avancée par l’équipe de Raluca Rufu (Weizmann Institute of Science, Israël) et publiée dans la revue Nature Geoscience. En multipliant ainsi les événements catastrophiques dans la prime jeunesse de notre planète, les trois chercheurs israéliens annoncent soustraire au scénario existant son problème majeur : celui de la composition comparable entre la Terre et la Lune.
+Un fort lien de parenté entre la Terre et la Lune
+
+Depuis les vols Apollo, à la fin des années 1960 et au début des années 1970, les astronomes disposent d’échantillons lunaires qu’ils ont pu dater et analyser. Ils ont ainsi établi que la Lune s’était formée voici 4,5 milliards d’années, c’est-à-dire quelques dizaines de millions d’années après la Terre. La similitude de composition entre les roches lunaires et le manteau terrestre a conduit à une conclusion aujourd’hui bien établie : la Lune est née d’une collision entre la jeune Terre et un corps de la taille de Mars.
+
+Le choc a éjecté des roches dans l’espace, dont une partie, restée en orbite autour de la Terre (devenue plus grosse), se sont rapidement agglomérées pour former un nouvel astre : la Lune. Ce scénario, détaillé dans Ciel & Espace n° 549, est étayé par quelques arguments solides, dont le mode de formation des planètes (par collisions) et l’éloignement actuel de la Lune, compatible avec sa position initiale, juste après sa formation voici 4,5 milliards d’années.
+
+---
+---
+9
+Falcon 9 : retour en vol annoncé pour le 14 janvier
+-
+a fusée de la société privée Space X, qui aurait dû être lancée le 8 janvier 2017, devrait finalement décoller le 14 janvier.
+
+Pour le retour en vol de sa fusée Falcon 9, Space X devra encore attendre jusqu’au week-end prochain. Après avoir été clouée au sol à la suite d’une explosion sur le pas de tir le 1er septembre 2016, le lanceur aurait dû emporter des satellites d’Iridium-NEXT ce dimanche 8 janvier. L’agence spatiale privée avait bien obtenu l’autorisation de la Federal Aviation Administration de décoller, mais des conditions météorologiques défavorables ont repoussé l’échéance.
+
+La nouvelle tentative de lancement doit avoir lieu le samedi 14 janvier 2017, à 18 h 54 (heure française), depuis la base militaire de Vandenberg, en Californie.
+
+Ce tir est très attendu car il permettra à Space X de rassurer ses clients.
+
+
+---
+---
+11
+-
+Les astéroïdes et l’Univers X au programme des nouvelles missions de la Nasa
+-
+ Un télescope spatial consacré à l'étude du rayonnement X de l'Univers et deux sondes à destination des astéroïdes seront lancés en 2020, 2021 et 2023, annonce l'agence spatiale américaine.
+
+La Nasa vient de sélectionner trois prochaines missions pour le début de la prochaine décennie. Premier à décoller, le télescope spatial IXPE, choisi parmi quatorze autres projets proposés dans le cadre du programme « Explorers », sera lancé en 2020 et coûtera 188 millions de dollars.
+
+IXPE (The imaging X-ray polarimetry explorer) permettra pour la première fois d'étudier en détail le rayonnement X émis par le voisinage immédiat des trous noirs et des étoiles à neutrons, chauffé à plusieurs millions de degrés. Il mesurera en particulier la polarisation de ce rayonnement — la direction dans laquelle il vibre. C'est une propriété essentielle pour comprendre ces environnements extrêmes où gravitation, champ électrique et champ magnétique sont poussés à leur limite.
+
+---
+---
+12
+-
+Space X espère lancer Falcon 9 le 8 janvier
+-
+ Après l’explosion d’une fusée Falcon9 le 1er septembre 2016, Space X souhaite reprendre rapidement son activité par la mise sur orbite des satellites de télécommunication Iridium-NEXT.
+
+La société Space X annonce qu’elle compte procéder à un nouveau lancement de Falcon9 le dimanche 8 janvier 2017. Cette nouvelle vient trois mois à peine après l’explosion d’une fusée identique sur son pas de tir, à cap Canaveral. L’accident avait eu lieu lors du remplissage des réservoirs de carburant qui ont vu leur pression interne augmenter drastiquement, suite à la formation d’oxygène solide le long des parois. Cette fois, le chargement du carburant devrait s’effectuer à température plus élevée de façon à éviter ce problème. Cette solution à court terme doit être suivie, plus tard, d’une modification des réservoirs.
+
+Ce retour en vol, déjà retardé le 16 décembre 2016, attend la confirmation de la Federal Aviation Administration (FAA) qui a participé à l’identification des causes de l’explosion et qui devrait donner son accord. La fusée doit décoller de la base militaire de Vandenberg (Californie) et emporter dix satellites du projet Iridium-NEXT avec elle.
+
+
+--
+---
+13
+Orion invisible révélée
+-
+ La nébuleuse M 42, dans la constellation d’Orion, a été photographiée en infrarouge et en haute résolution par le télescope Vista.
+
+Saurez-vous reconnaître la grande nébuleuse d’Orion sur ce cliché ? Elle ne saute pas aux yeux, et pourtant elle est bien là sur la gauche, débarrassée de ses nuages de poussière les plus envahissants. Son aspect est transformé par une palette de fausses couleurs et le moyen d’observation mis en œuvre ici : le télescope Vista.
+
+Cet instrument européen de 4m de diamètre est situé juste à côté du VLT, au Chili, et permet de faire de grands relevés du ciel en infrarouge. Eu égard à la taille importante du télescope, il s’agit ici d’une mosaïque de grande dimension.
+
+Le plus fascinant est non pas la nébuleuse d’Orion elle-même, mais plutôt toutes les petites condensations gazeuses sur sa droite. 
+
+Une vidéo alternant vues dans le visible et dans l’infrarouge permet de souligner tous les objets tapis derrière des nuages de poussière. Ce sont autant de jeunes systèmes stellaires en cours de formation. On en dénombre également de nombreux autour de la nébuleuse d’Orion elle-même.
+
+---
+---
+14
+Dans plus d’un million d’années, une étoile va frôler le Système solaire
+-
+ D’après les données du satellite Gaia, la petite étoile rouge Gliese 710 passera à 77 jours-lumière du Soleil. L’événement aura lieu dans 1,35 millions d’années.
+
+Les astronomes connaissent l’étoile Gliese 710 depuis longtemps. Située dans la constellation du Serpent, c’est une naine orange un peu moins chaude que le Soleil, qui se trouve actuellement à 63 années-lumière. Peu brillante (magnitude 9,6), elle n’est visible que dans un bon télescope d’amateur.
+
+Mais les astronomes savent aussi depuis plusieurs années que, dans son mouvement à travers la Galaxie, elle se dirige vers le Système solaire. Les mesures astrométriques réalisées à l’aide du satellite européen Hipparcos, dans les années 1990, indiquaient que d’ici 1,3 million d’années, elle passerait à un peu plus d’une année-lumière du Soleil. Or, voilà que de nouvelles mesures, plus précises, faites avec le nouveau satellite européen Gaia, montrent qu’elle passera en réalité cinq fois plus près, à 0,2 années-lumière. Autrement dit, à 77 jours-lumière ! Cela peut sembler proche mais pour fixer les idées, l’engin spatial le plus lointain, Voyager 1, a été lancé en 1977 et ne se trouve même pas à 1 jour-lumière…
+Une étoile de plus dans le ciel
+
+Filip Berski et Piotr A. Dybczyński, les deux astronomes polonais qui ont abouti à cette conclusion, précisent que quand l’étoile sera au plus près, dans 1,35 million d’années, elle brillera dans le ciel d’une belle magnitude -2,7 — soit l’équivalent de l’éclat de Mars quand elle se trouve au plus près de la Terre, comme c’est le cas tous les deux ans. Autrement dit, ce sera un astre parmi les plus brillants de toute la sphère céleste.
+
+Alors, son mouvement apparent parmi les autres étoiles sera d’un peu moins d’une minute d’arc par an. Cela correspond au diamètre apparent de Vénus, quand elle se trouve non loin de la Terre. À l’œil nu, cela équivaut à un point mais dans un petit télescope d’amateur, c’est un déplacement aisément mesurable en quelques mois par rapport aux étoiles du fond du ciel... Mais y aura-t-il quelqu'un sur Terre pour l'observer ?
+
+---
+---
+15
+-
+La Chine affiche ses ambitions spatiales pour 2017-2022
+-
+ Dans un livre blanc, la Chine a pour la première fois publié quels seront ses objectifs spatiaux pour les cinq prochaines années. Le document confirme les programmes déjà connus de station spatiale et d’exploration de la Lune et de Mars. Mais il met surtout l’accent sur l’ouverture aux coopérations internationales.
+
+Ce 27 décembre 2016, le gouvernement chinois a diffusé pour la première fois un document qui décrit ses efforts en matière de développement spatial. Ce livre blanc intitulé « Les activités spatiales de la Chine en 2016 » revient sur les avancées réalisées depuis 2011 et indique les programmes engagés pour les cinq prochaines années.
+
+Malgré tout, ce document ne donne pas beaucoup de détails sur des ambitions déjà affichées et connues.
+La Lune et Mars toujours à l’affiche
+
+Au chapitre « Exploration de l’espace profond », la Lune est confirmée à sa place d’objectif numéro un avec le lancement d’une sonde Chang’e 5 dans le second semestre de 2017. Celle-ci aura pour mission d’atterrir sur la face visible, de forer le sol et de réexpédier quelques kilogrammes de roches vers la Terre.
+
+Ni le lieu visé ni la date exacte de la mission ne sont données. Une autre mission, Chang’e 4 (oui, l’ordre est inversé), devrait décoller avant la fin de 2018 pour se poser sur la face cachée. Il s’agit d’une réplique de Chang’e 3 qui, en 2013, avait déposé en douceur un rover dans le golfe des Iris, sur l’hémisphère visible de la Lune. Là encore, le site d’atterrissage n’est pas spécifié.
+
+La Chine avait déjà dévoilé ses plans de sonde martienne. Elle les confirme dans le livre blanc puisque l’annonce est faite du lancement d’un rover en 2020. Comme pour la Lune, le site d’atterrissage n’a pas été révélé. 2020 sera donc une année très martienne avec trois rovers (un américain, un européen et un chinois) qui s’élanceront vers la planète rouge. Le document précise toutefois que la Chine compte bien développer la technologie nécessaire à collecter et rapporter sur Terre des échantillons martiens, un domaine dans lequel la France et les États-Unis avaient initialement des plans qui ont été abandonnés.
+
+---
+---
+16
+Rosetta a vu du givre sur Chury
+-
+ Sur la comète Churyumov-Gerasimenko, la glace conservée en surface pendant des années peut disparaître au Soleil en quelques minutes. Puis réapparaître à l'ombre des montagnes.
+
+Si la mission de la sonde Rosetta s'est terminée il y a trois mois après son crash en douceur sur la comète Churyumov-Gerasimenko, l'exploitation des données acquises pendant ses deux années en orbite est loin d'être achevée.
+
+Deux articles publiés coup sur coup dans la revue américaine Science montrent comment le sol de la comète s'érode à chacun de ses passages près du Soleil, révélant des glaces d'eau et de dioxyde de carbone qui disparaissent en parfois quelques minutes, avant de se redéposer la nuit venue.
+Le printemps d’Anhur
+
+Dans un premier article, Gianrico Filacchione et ses collègues se penchent sur une petite zone de la région baptisée Anhur, qui est restée plongée dans la nuit pendant 4 ans avant d'émerger au soleil à la mi-janvier 2015.
+
+Observée avec le spectro-imageur infrarouge Virtis-M fin mars 2015, lorsque la comète était à plus de 2 unités astronomiques du Soleil, la zone de 80 m par 60 révèle 0,1% de glace de CO2.
+
+« Le dioxyde carbone est l'une des espèces chimiques les plus abondantes dans les noyaux cométaires, mais à cause de sa grande volatilité, en général elle est seulement présente sous la surface », expliquent les chercheurs.
+
+---
+---
+17
+Une fontaine de jouvence aux portes de la Voie Lactée
+-
+
+
