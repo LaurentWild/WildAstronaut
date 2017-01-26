@@ -293,9 +293,9 @@ h3.title {
     text-decoration: none;
     font-size: 25px;
     font-style: bold;
-    color: #0E075E;
+    color: white;
 		margin: 15px;
 		padding: 10px;
 		width:auto;
- 	 background-color: rgba(255, 255, 255, 0.5);
+ 	 background-color: rgba(10, 10, 10, 0.5);
 }
