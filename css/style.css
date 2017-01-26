@@ -30,6 +30,7 @@ header {
     bottom: 0;
     right: 0;
 	z-index:100;
+	pointer-events:none;
 }
 
 #logo h1 {
@@ -74,9 +75,14 @@ ul#nav li{
 	text-transform:uppercase;
 	font-size:1.3em!important;
 	font-weight:bold;
-	color:#0e0d17;
 	letter-spacing:2px;
     list-style-type: none;
+}
+ul#nav li a{
+	color: #0e0d17;
+}
+ul#nav li a:hover{
+	color: #0e0d17;
 }
 
 
