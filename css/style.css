@@ -267,3 +267,9 @@ footer {
 		padding:2px 0 0 0;
 	}
 }
+
+.img_article {
+	border: 1px solid white;
+	padding-left: 3%;
+	padding-right: 3%;
+}
