@@ -228,6 +228,34 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+	#presentation{
+		padding:0 20px;
+	}
+	.text-pres{
+		font-size: 1.1em;
+	}
+	
+	h3.title {
+			font-size: 20px!important;
+	}
+	
+	.view-first .mask {
+		display:none!important;
+	}
+	
+	
+	.view-first:hover h3.title{
+		 position: absolute;
+		 top: 30px;
+		 left: 0;
+		 width: 100%;
+			color: white;
+			margin: 15px;
+			padding: 10px 10px 10px 10px;
+			width:auto;
+		 background-color: rgba(10, 10, 10, 0.5);
+	}
+
 }
 
 
@@ -241,6 +269,9 @@ footer {
 	p.titre-pres{
 		text-align:center !important;
 		margin-top:20px;
+	}
+	.text-pres{
+		font-size: 1em;
 	}
 	.blueDark{
 		background:none;
@@ -286,7 +317,7 @@ footer {
 	position:absolute;
 	top:0;
 	left:0;
-	padding:70px 0 20px;
+	padding:80px 0 20px;
 	width:99.7%;
 	margin:1px;
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -298,6 +329,18 @@ footer {
    -o-transition: all 0.4s ease-in-out;
    -ms-transition: all 0.4s ease-in-out;
    transition: all 0.4s ease-in-out;
+}
+asda .view-first h3 {
+	padding:30px 0 10px 10px;
+	margin:0;
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
 }
 
 h3.title {
@@ -341,7 +384,7 @@ h3.title {
    -ms-transition: all 0.2s linear;
    transition: all 0.2s linear;
 }
-.view-first a.info {
+.view-first span.info {
 	 color:#ddd;
 	 font-weight:bold;
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -360,7 +403,7 @@ h3.title {
    opacity: 1;
 }
 .view-first:hover h3{
-	width:130%;
+	width:99.9%;
 	color:#000000;
 	background-color: rgba(220, 209, 33, 1);
 	padding:30px 0 10px 10px;
@@ -373,7 +416,7 @@ h3.title {
 }
 .view-first:hover h3,
 .view-first:hover p,
-.view-first:hover a.info {
+.view-first:hover span.info {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
    filter: alpha(opacity=100);
    opacity: 1;
@@ -390,10 +433,16 @@ h3.title {
    -ms-transition-delay: 0.1s;
    transition-delay: 0.1s;
 }
-.view-first:hover a.info {
+.view-first:hover span.info {
    -webkit-transition-delay: 0.2s;
    -moz-transition-delay: 0.2s;
    -o-transition-delay: 0.2s;
    -ms-transition-delay: 0.2s;
    transition-delay: 0.2s;
+}
+span.info:hover:before {
+	content:"+ ";
+}
+span.info:hover{
+	text-decoration:none!important;
 }
