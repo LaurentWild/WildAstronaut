@@ -277,3 +277,25 @@ footer {
 		padding:2px 0 0 0;
 	}
 }
+
+
+
+.imageDiv {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+h3.title {
+   position: absolute;
+   top: 30px;
+   left: 0;
+   width: 100%;
+    text-decoration: none;
+    font-size: 25px;
+    font-style: bold;
+    color: #0E075E;
+		margin: 15px;
+		padding: 10px;
+		width:auto;
+ 	 background-color: rgba(255, 255, 255, 0.5);
+}
