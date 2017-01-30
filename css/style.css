@@ -234,18 +234,6 @@ footer {
 	.text-pres{
 		font-size: 1.1em;
 	}
-<<<<<<< HEAD
-
-	h3.title {
-			font-size: 20px!important;
-	}
-
-	.view-first .mask {
-		display:none!important;
-	}
-
-
-=======
 	
 	h3.title {
 			font-size: 20px!important;
@@ -256,7 +244,6 @@ footer {
 	}
 	
 	
->>>>>>> b29b1119f1e4ff5a00a36837e510c2187fc33293
 	.view-first:hover h3.title{
 		 position: absolute;
 		 top: 30px;
@@ -418,11 +405,7 @@ h3.title {
 .view-first:hover h3{
 	width:99.9%;
 	color:#000000;
-<<<<<<< HEAD
-	background-color: rgba(220, 209, 33, 1);
-=======
 	background-color: rgba(213, 203, 63, 1);
->>>>>>> b29b1119f1e4ff5a00a36837e510c2187fc33293
 	padding:30px 0 10px 10px;
 	margin:0;
    top: 0px;
@@ -462,8 +445,4 @@ span.info:hover:before {
 }
 span.info:hover{
 	text-decoration:none!important;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> b29b1119f1e4ff5a00a36837e510c2187fc33293
