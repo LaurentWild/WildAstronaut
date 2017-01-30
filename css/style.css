@@ -123,6 +123,7 @@ ul#nav li a:hover{
 	font-size: 1.18em;
 	color: #424242;
 }
+
 .img-padding{
 	padding-left:1px !important;
 	padding-right:1px !important;
@@ -131,10 +132,69 @@ ul#nav li a:hover{
 	overflow:hidden;
 }
 
-
 .rowAdjust{
 	margin-left:0!important;
 	margin-right:0!important;
+}
+
+.mask a{
+	text-decoration: none;
+}
+
+.contenedor-caroucel {
+  margin: auto;
+  margin-bottom: 50px;
+  width: 85%;
+  max-width: 640px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px #45454B, 0 25px 50px;
+}
+
+.caroucel {
+  display: flex;
+  width: 400%;
+}
+
+.caroucel-section {
+  width: 100%;
+  background: #45454B;
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.caroucel-img {
+  display: block;
+  width: 640px;
+  height: 400px;
+}
+
+.btn-prev, .btn-next {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-prev:hover, .btn-next:hover {
+  background: white;
+}
+
+.btn-prev {
+  left: 10px;
+}
+
+.btn-next {
+  right: 10px;
 }
 
 /*ARTICLES*/
