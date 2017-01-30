@@ -89,6 +89,19 @@ Cette hypothèse est appuyée par les résultats récents de Sean Andrews qui di
 
 ---
 ---
+9
+Falcon 9 : retour en vol annoncé pour le 14 janvier
+-
+a fusée de la société privée Space X, qui aurait dû être lancée le 8 janvier 2017, devrait finalement décoller le 14 janvier.
+
+Pour le retour en vol de sa fusée Falcon 9, Space X devra encore attendre jusqu’au week-end prochain. Après avoir été clouée au sol à la suite d’une explosion sur le pas de tir le 1er septembre 2016, le lanceur aurait dû emporter des satellites d’Iridium-NEXT ce dimanche 8 janvier. L’agence spatiale privée avait bien obtenu l’autorisation de la Federal Aviation Administration de décoller, mais des conditions météorologiques défavorables ont repoussé l’échéance.
+
+La nouvelle tentative de lancement doit avoir lieu le samedi 14 janvier 2017, à 18 h 54 (heure française), depuis la base militaire de Vandenberg, en Californie.
+
+Ce tir est très attendu car il permettra à Space X de rassurer ses clients.
+
+---
+---
 10
 Origine de la Lune : une nouvelle théorie peu convaincante
 -
@@ -100,19 +113,6 @@ Un fort lien de parenté entre la Terre et la Lune
 Depuis les vols Apollo, à la fin des années 1960 et au début des années 1970, les astronomes disposent d’échantillons lunaires qu’ils ont pu dater et analyser. Ils ont ainsi établi que la Lune s’était formée voici 4,5 milliards d’années, c’est-à-dire quelques dizaines de millions d’années après la Terre. La similitude de composition entre les roches lunaires et le manteau terrestre a conduit à une conclusion aujourd’hui bien établie : la Lune est née d’une collision entre la jeune Terre et un corps de la taille de Mars.
 
 Le choc a éjecté des roches dans l’espace, dont une partie, restée en orbite autour de la Terre (devenue plus grosse), se sont rapidement agglomérées pour former un nouvel astre : la Lune. Ce scénario, détaillé dans Ciel & Espace n° 549, est étayé par quelques arguments solides, dont le mode de formation des planètes (par collisions) et l’éloignement actuel de la Lune, compatible avec sa position initiale, juste après sa formation voici 4,5 milliards d’années.
-
----
----
-9
-Falcon 9 : retour en vol annoncé pour le 14 janvier
--
-a fusée de la société privée Space X, qui aurait dû être lancée le 8 janvier 2017, devrait finalement décoller le 14 janvier.
-
-Pour le retour en vol de sa fusée Falcon 9, Space X devra encore attendre jusqu’au week-end prochain. Après avoir été clouée au sol à la suite d’une explosion sur le pas de tir le 1er septembre 2016, le lanceur aurait dû emporter des satellites d’Iridium-NEXT ce dimanche 8 janvier. L’agence spatiale privée avait bien obtenu l’autorisation de la Federal Aviation Administration de décoller, mais des conditions météorologiques défavorables ont repoussé l’échéance.
-
-La nouvelle tentative de lancement doit avoir lieu le samedi 14 janvier 2017, à 18 h 54 (heure française), depuis la base militaire de Vandenberg, en Californie.
-
-Ce tir est très attendu car il permettra à Space X de rassurer ses clients.
 
 
 ---
