@@ -158,6 +158,22 @@ ul#nav li a:hover{
 	padding-left: 3%;
 	padding-right: 3%;
 }
+.article_detail{
+	padding:0 40px 20px!important;
+}
+.text_detail{
+	
+}
+.article_detail .img_detail{
+	float:right;
+	display:inline-block;
+	max-width:50%;
+	margin:20px 0 20px 20px;
+	text-align:center;
+}
+.article_detail img{
+	max-width:100%;
+}
 
 h3.banner{
 	padding:20px;
@@ -293,6 +309,21 @@ footer {
 	p.titre-pres{
 		text-align:center !important;
 		margin-top:20px;
+	}
+		
+	.article_detail{
+		display:table;
+	}
+	.text_detail{
+		display:table-header-group;
+	}
+	.article_detail .img_detail{
+		float:none;
+		display:table-footer-group;
+		max-width:100%;
+	}
+	.article_detail img{
+		max-width:100%;
 	}
 	.text-pres{
 		font-size: 1em;
