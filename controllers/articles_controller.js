@@ -1,27 +1,89 @@
 
-function articleRow() {
+function addArticleRow() {
+
+     // $('.lastArticles').load('../views/left_article_row.html').attr("id", "rowNum1");
+     //
+     // $('.az').load('../views/left_article_row.html', data, function(response,status,xhr))
+
+     $('.az').load('../views/articles_row.html', function(responseTxt, statusTxt, xhr){
+          if(statusTxt == "success") {
+
+               var html = $.parseHTML(responseTxt);
+
+               $.each( html, function( i, el ) {
+               // console.log(i,el);
+               });
+               console.log(html[2].querySelector(".aaa").innerHTML);
+
+               let articlesRow = html[2].querySelector(".aaa");
+
+               articlesRow.load('../views/left_article_row.html', function(responseTxt, statusTxt, xhr){
+                    if(statusTxt == "success") {
 
 
-    $(function() {
-        $('.lastArticles').load('../views/left_article_row.html').addClass('rowNum1');
-    });
+
+                    }
+                    if(statusTxt == "error") {
+                        alert("Error: " + xhr.status + ": " + xhr.statusText);
+                    }
+               });
+          }
+          if(statusTxt == "error") {
+              alert("Error: " + xhr.status + ": " + xhr.statusText);
+          }
+     });
+
+
+     // $('.lastArticles')
+     // .append(
+     //     $("<div/>").attr("class", "col-xs-12 col-sm-6 img-padding imageDiv")
+     //     .append(
+     //         $("<div/>").attr("class", "view view-first")
+     //         .append(
+     //             $("<a/>").attr("href", "article.external_link")
+     //             .append(
+     //                 $("<img/>").attr("class", "img-responsive").attr("src", "../imgs/art1.jpeg"),
+     //                 $("<div/>").attr("class", "mask")
+     //                 .append(
+     //                     $("<p/>").text("article.desc"),
+     //                     $("<span/>").attr("class", "info").text("En savoir plus")
+     //                 ),
+     //                 $("<h3/>").attr("class", "title").text("article.title")
+     //
+     //             )
+     //         )
+     //     )
+     // );
+
+
+
+
+
+    // <!-- <div class="row articlesPlacer rowAdjust">
+    //     <div class="col-xs-1"></div>
+    //     <div class="col-xs-10">
+    //         <div class="row az">
+    //         </div>
+    //     </div>
+    //     <div class="col-xs-1"></div>
+    // </div> -->
+
+
+//     $(function() {
+//         $('.lastArticles').load('../views/left_article_row.html').attr("id", "rowNum1");
+//     });
+//     let rowbigDiv = document.querySelector("#rowNum1 .bigDiv");
+// //
+// console.log(rowbigDiv);
+//     rowbigDiv.append(
+//         $("<img/>").attr("class", "img-responsive").attr("src", "../imgs/art1.jpeg")
+//     );
+
 }
 
 
 
 function articleBigThumbnail(article) {
-
-
-    $(function() {
-        $('.lastArticles').load('../views/left_article_row.html').addClass('rowNum1');
-    });
-
-
-
-
-
-
-
 
     // $(function() {
     //     $('.az').load('../views/article_view.html');
@@ -29,27 +91,27 @@ function articleBigThumbnail(article) {
 
 
 
-    // $(".az").html("");
-    // $(".az")
-    // .append(
-    //     $("<div/>").attr("class", "col-xs-12 col-sm-6 img-padding imageDiv")
-    //     .append(
-    //         $("<div/>").attr("class", "view view-first")
-    //         .append(
-    //             $("<a/>").attr("href", article.external_link)
-    //             .append(
-    //                 $("<img/>").attr("class", "img-responsive").attr("src", "../imgs/art1.jpeg"),
-    //                 $("<div/>").attr("class", "mask")
-    //                 .append(
-    //                     $("<p/>").text(article.desc),
-    //                     $("<span/>").attr("class", "info").text("En savoir plus")
-    //                 ),
-    //                 $("<h3/>").attr("class", "title").text(article.title)
-    //
-    //             )
-    //         )
-    //     )
-    // );
+    $(".az").html("");
+    $(".az")
+    .append(
+        $("<div/>").attr("class", "col-xs-12 col-sm-6 img-padding imageDiv")
+        .append(
+            $("<div/>").attr("class", "view view-first")
+            .append(
+                $("<a/>").attr("href", article.external_link)
+                .append(
+                    $("<img/>").attr("class", "img-responsive").attr("src", "../imgs/art1.jpeg"),
+                    $("<div/>").attr("class", "mask")
+                    .append(
+                        $("<p/>").text(article.desc),
+                        $("<span/>").attr("class", "info").text("En savoir plus")
+                    ),
+                    $("<h3/>").attr("class", "title").text(article.title)
+
+                )
+            )
+        )
+    );
 }
 function articleLargegThumbnail(article) {
     $(".az").html("");
@@ -85,17 +147,19 @@ $(document).ready(function() {
     //         articleBigThumbnail(article);
     //     }
     // });
+
     $.ajax({
         url: '../json/articles.json',
         dataType: 'json',
         success: function( data ) {
             for(item of data) {
                 let article = new Article(item);
-                articleBigThumbnail(article);
             }
         },
         error: function( data ) {
             alert( "ERROR:  " + data );
         }
     });
+
+   addArticleRow();
 });
