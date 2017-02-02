@@ -1,20 +1,9 @@
 
-function addArticleRow() {
-     $('.az').load('../views/articles_row.html', function(responseTxt, statusTxt, xhr){
+function s() {
+     $('.articles').load('../views/articles_row.html', function(responseTxt, statusTxt, xhr){
           if(statusTxt == "success") {
-               var html = $.parseHTML(responseTxt);
-               $.each( html, function( i, el ) {
-               // console.log(i,el);
-               });
-
-               let articlesRow = html[2].querySelector(".aaa");
-               console.log(articlesRow);
-
-               $('.aaa').load('../views/left_article_row.html', function(responseTxt, statusTxt, xhr){
+               $('.articles_row').load('../views/left_article_row.html', function(responseTxt, statusTxt, xhr){
                     if(statusTxt == "success") {
-
-                         let leftArticleRow = html[2].querySelector(".imageDiv");
-
                          $('.bigDiv').load('../views/big_article_view.html', function(responseTxt, statusTxt, xhr){
                               if(statusTxt == "success") {
 
@@ -31,8 +20,6 @@ function addArticleRow() {
                                   alert("Error: " + xhr.status + ": " + xhr.statusText);
                               }
                          });
-
-
                     }
                     if(statusTxt == "error") {
                         alert("Error: " + xhr.status + ": " + xhr.statusText);
@@ -172,5 +159,5 @@ $(document).ready(function() {
         }
     });
 
-   addArticleRow();
+   addArticlesRow();
 });
