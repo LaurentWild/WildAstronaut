@@ -32,6 +32,13 @@ function addArticlesRow() {
      });
 }
 
+
+
+function articleDetail(id){
+	
+}
+
+
 $(document).ready(function() {
     $.ajax({
         url: '../json/articles.json',
