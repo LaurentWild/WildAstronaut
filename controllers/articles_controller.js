@@ -1,25 +1,36 @@
 
 function addArticleRow() {
-
-     // $('.lastArticles').load('../views/left_article_row.html').attr("id", "rowNum1");
-     //
-     // $('.az').load('../views/left_article_row.html', data, function(response,status,xhr))
-
      $('.az').load('../views/articles_row.html', function(responseTxt, statusTxt, xhr){
           if(statusTxt == "success") {
-
                var html = $.parseHTML(responseTxt);
-
                $.each( html, function( i, el ) {
                // console.log(i,el);
                });
-               console.log(html[2].querySelector(".aaa").innerHTML);
 
                let articlesRow = html[2].querySelector(".aaa");
+               console.log(articlesRow);
 
-               articlesRow.load('../views/left_article_row.html', function(responseTxt, statusTxt, xhr){
+               $('.aaa').load('../views/left_article_row.html', function(responseTxt, statusTxt, xhr){
                     if(statusTxt == "success") {
 
+                         let leftArticleRow = html[2].querySelector(".imageDiv");
+
+                         $('.bigDiv').load('../views/big_article_view.html', function(responseTxt, statusTxt, xhr){
+                              if(statusTxt == "success") {
+
+                              }
+                              if(statusTxt == "error") {
+                                  alert("Error: " + xhr.status + ": " + xhr.statusText);
+                              }
+                         });
+                         $('.largeDiv').load('../views/large_article_view.html', function(responseTxt, statusTxt, xhr){
+                              if(statusTxt == "success") {
+
+                              }
+                              if(statusTxt == "error") {
+                                  alert("Error: " + xhr.status + ": " + xhr.statusText);
+                              }
+                         });
 
 
                     }
