@@ -35,7 +35,9 @@ function addArticlesRow() {
 
 
 function articleDetail(id){
-	
+	 $('#articleDetail').html('');
+      
+	  
 }
 
 
