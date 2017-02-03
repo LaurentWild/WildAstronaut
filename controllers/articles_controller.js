@@ -4,7 +4,25 @@ function loadFirstArticleView(article) {
      $('.firstArticle').load('../views/big_article_view.html', function(responseTxt, statusTxt, xhr){
           if(statusTxt == "success") {
 
-               // var html = $.parseHTML(responseTxt);
+
+
+               var html = $.parseHTML(responseTxt.trim())[0];
+               var img = html.querySelector("img");
+               img.setAttribute("src", "../imgs/" + article.img);
+
+
+               console.log(img);
+               console.log(article.img);
+
+
+
+               // console.log("Response TXT : ")
+               // console.log(responseTxt);
+               // console.log("statusTxt" + statusTxt);
+               // console.log("xhr")
+               // console.log(xhr);
+               // console.log(img);
+               // console.log($.parseHTML(responseTxt.trim()))
                // $.each( html, function( i, el ) {
                // //   console.log(el.nodeName);
                //
@@ -19,9 +37,9 @@ function loadFirstArticleView(article) {
                //$('#title').id = 'title' + article.id;
                // console.log("trtr" + html);
 
-               $('#title').text(article.title);
+               $('#title').text("eeee");
                $('#desc').text(article.desc);
-               $('#articleImg').attr("src", '../imgs/' + article.img);// + article.img
+               // $('#articleImg').attr("src", '../imgs/' + article.img);// + article.img
                // $('.view-first > img').attr("src", "../imgs/");
                // console.log($('.view-first > img'));
 
@@ -138,25 +156,4 @@ $(document).ready(function() {
                alert( "ERROR:  " + data );
           }
      });
-
-
-
-
-
-
-(function() {
-    $.ajax({
-        url: '../json/articles.json',
-        dataType: 'json',
-        success: function( data ) {
-            for(item of data) {
-                let article = new Article(item);
-            }
-        },
-        error: function( data ) {
-            alert( "ERROR:  " + data );
-        }
-    });
-
-	addArticlesRow();
 });
