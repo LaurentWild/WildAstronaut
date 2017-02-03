@@ -138,25 +138,4 @@ $(document).ready(function() {
                alert( "ERROR:  " + data );
           }
      });
-
-
-
-
-
-
-(function() {
-    $.ajax({
-        url: '../json/articles.json',
-        dataType: 'json',
-        success: function( data ) {
-            for(item of data) {
-                let article = new Article(item);
-            }
-        },
-        error: function( data ) {
-            alert( "ERROR:  " + data );
-        }
-    });
-
-	addArticlesRow();
 });
