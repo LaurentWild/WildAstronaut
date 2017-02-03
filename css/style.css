@@ -446,11 +446,3 @@ span.info:hover:before {
 span.info:hover{
 	text-decoration:none!important;
 }
-
-#nimp a {
-	background: #a1a1a1;
-	padding: 10px;
-	margin-left:50px;
-	color: white;
-	font-weight:bold;
-}

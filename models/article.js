@@ -2,9 +2,12 @@
 class Article {
 
   constructor(json){
-    this.title = json.title;
-      this.external_link = json.external_link;
-       this.desc = json.desc;
+     this.title = json.title;
+     this.date = json.date;
+     this.external_link = json.external_link;
+     this.img = json.img;
+     this.author = json.author;
+     this.tags = json.tags;
   }
 
   imageLink () {
