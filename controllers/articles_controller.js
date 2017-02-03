@@ -50,28 +50,5 @@ function addArticlesRow() {
         }
     });
 	
-	/* function articleDetail(id){
-	 
-		console.log();
-		let detailFill = `
-						<div class="img_detail">
-						  <img class="img-responsivel" src="$(article.img)">
-						</div>
-						<div class="text_detail">
-						  <h1 class="articleTitle">${article.title}</h1>
-						  <small>Par ${article.author}  -  Publié le ${article.date}</small><br>
-						  <p>${article.contenu}</p>
-						   <small>Lien: <a target="_blank" href="${article.external_link}">${article.linkCap}</a></small>
-						  <br>
-						</div>
-	  `;
-		   
-		 return $('#articleContent').html("blabla");
-	}
-	
-	articleDetail(); */
-	
-	$('#articleContent').html("blablaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-	
 	addArticlesRow();
 });

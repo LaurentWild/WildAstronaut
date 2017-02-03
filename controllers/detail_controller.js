@@ -16,10 +16,11 @@
 				let articles = new Articles(articlesJSON);
 		 
 				function articleDetail(id){
-					
+					//Set var for data access
 					let that = articles.data[id];
 					
-					let detailFill =`	<div class="img_detail">
+					//Set the template with data attributes
+					let detailFill =   `<div class="img_detail">
 											  <img class="img-responsivel" src="../imgs/${that.img}">
 											</div>
 											<div class="text_detail">
@@ -29,16 +30,19 @@
 											   <small>Lien: <a target="_blank" href="${that.external_link}">${that.linkCap}</a></small>
 											  <br>
 											</div>`;
-											
+					
+					//Function to search article
 					articles.data.forEach(() => {
-						
 						//console.log(that.id);
 						
+						//Search by ID and insert template
 						if(that.id === id){
 							return $('#articleContent').html(detailFill);
 						}
 					})
 				}
+				
+				//Call the function with argument of ID
 				articleDetail(9);
 			
 			} else {

@@ -2,9 +2,7 @@
 class Article {
 
 	constructor(json){
-	  
-
-
+		
 		this.title = json.title;
 		this.date = json.date;
 		this.external_link = json.external_link;
@@ -22,19 +20,16 @@ class Article {
 	imageLink () {
 		return '<img src="this.img" class="img-responsive" />';
 	}
-
-
-  // String.prototype.capitalizeFirstLetter = function() {
-  //     return this.charAt(0).toUpperCase() + this.slice(1);
-  // }
 	
+	//Simplify the site address
 	linkName(link){
 		let linkSplit = link.split("/");
 		return linkSplit[2];
 	}
 	
+	//Get the first 251 letters of article for description
 	shortDescription(contenu){
-		let desc = contenu.slice(0, 150);
+		let desc = contenu.slice(0, 250);
 		return desc + " ...";
 	}
 }
