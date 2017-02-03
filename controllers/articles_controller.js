@@ -123,15 +123,38 @@ $(document).ready(function() {
           dataType: 'json',
           success: function( data ) {
                let i = 0;
-               console.log(data);
+               //console.log(data);
                for(item of data) {
                     i++;
                     let article = new Article(item);
 
                     articles.push(article);
                     if(i === 4) break;
+										
                }
-               console.log("ART =>" + articles);
+               //console.log("ART =>" + articles);
+               addArticlesBlock(articles);
+          },
+          error: function( data ) {
+               alert( "ERROR:  " + data );
+          }
+     });
+});
+
+
+$(document).ready(function() {
+     let articles = [];
+     $.ajax({
+          url: '../json/articles.json',
+          dataType: 'json',
+          success: function( data ) {
+               let i = 0;
+               //console.log(data);
+               for(item of data) {
+                    i++;
+                    let article = new Article(item);
+               }
+               //console.log("ART =>" + articles);
                addArticlesBlock(articles);
           },
           error: function( data ) {

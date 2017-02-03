@@ -12,6 +12,36 @@
       <header>
       </header>
       <div class="allArticles">
+     
+      <div class="row rowAdjust">
+        <div class="col-xs-12">
+          <form class="form-inline">
+            <div class="form-group">
+              <!-- <label for="cityChoise">Tema: </label> -->
+              <input id="searchArticle" type="text" class="form-control" placeholder="Search..">
+            </div>
+            <button id="bSearch" type="button" class="btn btn-default" autofocus="auto" >Go Find</button>
+          </form>
+         
+          
+          <table style=" width: 100%; display: block;  margin: 20px 0; padding: 0;" border="1px">
+            <thead>
+               <tr id="options">
+                <th id="id">ID</th>
+                <th id="dateFormated">Date</th>
+                <th>Author</th>
+                <th>Tags</th>
+                <th>Link Caption</th>
+                <th>Title</th>
+                <th>Text</th>
+              </tr>
+            </thead>
+            <tbody id="tableArticles">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
         <!-- block articles 1-->
         <div class="row ">
           <div class="col-xs-1"></div>
@@ -276,5 +306,6 @@
     <script type="text/javascript" src="../controllers/template_controller.js"></script>
     <script type="text/javascript" src="../controllers/articles_controller.js"></script>
     <script type="text/javascript" src="../controllers/detail_controller.js"></script>
+    <script type="text/javascript" src="../controllers/search_controller.js"></script>
   </body>
 </html>
