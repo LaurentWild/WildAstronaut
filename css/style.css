@@ -159,7 +159,7 @@ ul#nav li a:hover{
 	padding-right: 3%;
 }
 .article_detail{
-	padding:0 40px 20px!important;
+	padding:0 80px 20px!important;
 }
 .text_detail{
 	
@@ -320,6 +320,7 @@ footer {
 		
 	.article_detail{
 		display:table;
+		padding:0 40px 20px!important;
 	}
 	.text_detail{
 		display:table-header-group;

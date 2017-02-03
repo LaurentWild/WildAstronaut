@@ -39,7 +39,7 @@
 				}
 			})
 		}
-		articleDetail(2);
+		articleDetail(9);
 	
 	} else {
         alert(`Status: ${req.status} - Could not load ${url}`);
