@@ -1,6 +1,6 @@
 function loadArticleView(article, divId, file, descStyle) {
      if(article !== undefined) {
-          console.log("art = " + article, divId, file, descStyle)
+          // console.log("art = " + article, divId, file, descStyle)
           $(divId).load(file, function(responseTxt, statusTxt, xhr){
                if(statusTxt == "success") {
                     // UPDATE ID IMG
@@ -54,6 +54,7 @@ function displayArticle(firstDiv, article, descStyle) {
 }
 
 function loadLeftArticleRow(articles, row) {
+console.log("left" + row);
      $('#articlesRow' + row).load('../views/left_article_row.html', function(responseTxt, statusTxt, xhr){
           if(statusTxt === "success") {
                // UPDATE ID FIRST ARTICLE
@@ -75,7 +76,7 @@ function loadLeftArticleRow(articles, row) {
                for(let i in divIds) {
                     // NUM ARTICLE
                     let numArticle = 4 * row + parseInt(i);
-                    console.log("row =" + row + " numArticle = " + numArticle);
+                    // console.log("row =" + row + " numArticle = " + numArticle);
                     let article = articles[numArticle];
                     if(articles[numArticle] === undefined) aricle = null;
                     loadArticleView(article, divIds[i] + row, file, descStyles[i]);
@@ -88,7 +89,8 @@ function loadLeftArticleRow(articles, row) {
 }
 
 function loadRightArticleRow(articles, row) {
-     $('#articlesRow' + row).load('../views/left_article_row.html', function(responseTxt, statusTxt, xhr){
+console.log("right" + row);
+     $('#articlesRow' + row).load('../views/right_article_row.html', function(responseTxt, statusTxt, xhr){
           if(statusTxt === "success") {
                // UPDATE ID FIRST ARTICLE
                let firstArticle = $(this).context.querySelector("#firstArticle");
@@ -109,7 +111,7 @@ function loadRightArticleRow(articles, row) {
                for(let i in divIds) {
                     // NUM ARTICLE
                     let numArticle = 4 * row + parseInt(i);
-                    console.log("row =" + row + " numArticle = " + numArticle);
+                    // console.log("row =" + row + " numArticle = " + numArticle);
                     let article = articles[numArticle];
                     if(articles[numArticle] === undefined) aricle = null;
                     loadArticleView(article, divIds[i] + row, file, descStyles[i]);
@@ -134,13 +136,12 @@ function addArticlesRow(articles, row) {
                // MIS A JOUR ID
                let articlesRow = $(this).context.querySelector("#articlesRow");
                articlesRow.setAttribute("id", "articlesRow" + row);
-               if(row % 2 === 0) {
+               if(parseInt(row) % 2 === 0) {
                     loadLeftArticleRow(articles, row);
                }
                else {
                     loadRightArticleRow(articles, row);
                }
-               console.log(row % 2);
           }
           if(statusTxt == "error") {
               alert("Error: " + xhr.status + ": " + xhr.statusText);
@@ -153,7 +154,6 @@ function addArticlesBlock(articles) {
      let nbreArticles = articles.length;
      //NBRE DE ROWS
      let rows = Math.ceil(articles.length / 4);
-     console.log(articles);
      // POUR CHAQUE ROWS
      for (let row = 0; row < rows; row++) {
           addArticlesRow(articles, row);
@@ -164,7 +164,6 @@ $(document).ready(function() {
      let articles = [];
      // CHECK ARTICLES DIV
      let divArticles = document.querySelector("#articles");
-     console.log(divArticles.className);
      $.ajax({
           url: '../json/articles.json',
           dataType: 'json',
