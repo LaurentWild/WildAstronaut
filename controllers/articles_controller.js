@@ -135,7 +135,7 @@ $(document).ready(function() {
                     i++;
                     let article = new Article(item);
                     articles.push(article);
-                    if(divArticles.className === "a4") {
+                    if(divArticles.className.split(" ")[0] === "a4") {
                          if(i === 4) break;
                     }
                }
