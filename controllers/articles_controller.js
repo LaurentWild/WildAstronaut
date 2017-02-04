@@ -3,6 +3,9 @@ function loadArticleView(article, divId, file, descStyle) {
           // console.log("art = " + article, divId, file, descStyle)
           $(divId).load(file, function(responseTxt, statusTxt, xhr){
                if(statusTxt == "success") {
+                    // UPDATE ID LINK
+                    let link = $(this).context.querySelector("a");
+                    link.setAttribute("id", "link" + article.id);
                     // UPDATE ID IMG
                     let articleImg = $(this).context.querySelector("#articleImg");
                     articleImg.setAttribute("id", "articleImg" + article.id);
@@ -15,8 +18,6 @@ function loadArticleView(article, divId, file, descStyle) {
                     // UPDATE ID IMG
                     let title = $(this).context.querySelector("#title");
                     title.setAttribute("id", "title" + article.id);
-
-
                     // FIRST DIV
                     let firstDiv = $(this).context.children[0];
                     // DISPLAY ARTICLE
@@ -33,6 +34,9 @@ function displayArticle(firstDiv, article, descStyle) {
      // FIRST DIV
      firstDiv.setAttribute("id", "divArticle" + article.id);
      firstDiv.className += " " + descStyle;
+     // LINK
+     let link = firstDiv.querySelector("#link" + article.id);
+     link.setAttribute("href", "article_details.html?id=" + article.id);
      // IMAGE
      let img = firstDiv.querySelector("#articleImg" + article.id);
      let image = article.img;
@@ -40,9 +44,7 @@ function displayArticle(firstDiv, article, descStyle) {
           let imgTab = article.img.split("_");
           image = imgTab[0] + "_r.jpeg";
      }
-     img.setAttribute("id", "img" + article.id);
      img.setAttribute("src", "../imgs/" + image);
-     img.setAttribute("id", "img" + article.id);
      // TITLE
      let title = firstDiv.querySelector("h3");
      title.setAttribute("id", "title" + article.id);

@@ -162,7 +162,7 @@ ul#nav li a:hover{
 	padding:0 80px 20px!important;
 }
 .text_detail{
-	
+
 }
 .article_detail .img_detail{
 	float:right;
@@ -257,25 +257,25 @@ footer {
 	h1.articleTitle{
 		font-size:1.8em!important;
 	}
-	
+
 	#presentation{
 		padding:0 20px;
 	}
 	.text-pres{
 		font-size: 1.1em;
 	}
-	
+
 	h3.title {
 			font-size: 20px!important;
 	}
 	.imgfooter {
     margin: 30px 5px!important;
 	}
-	
+
 	.view-first .mask {
 		display:none!important;
 	}
-	
+
 	.view-first:hover h3.title{
 		position: absolute;
 		top: 30px;
@@ -317,7 +317,7 @@ footer {
 		text-align:center !important;
 		margin-top:20px;
 	}
-		
+
 	.article_detail{
 		display:table;
 		padding:0 40px 20px!important;
@@ -374,7 +374,7 @@ footer {
 	ul#nav{
 		padding:2px 0 0 0;
 	}
-	
+
 	.allArticles{
 		margin:40px 0;
 	}

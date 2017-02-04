@@ -10,15 +10,14 @@
 
 	req.onreadystatechange = function(event) {
 		if (req.readyState === 4){
-			if (req.status === 200){ 
-			
+			if (req.status === 200){
+                    // PARSE JSON
 				let articlesJSON = JSON.parse(req.responseText);
 				let articles = new Articles(articlesJSON);
-		 
+                    // ARTICLE DETAILS
 				function articleDetail(id){
 					//Set var for data access
 					let that = articles.data[id];
-					
 					//Set the template with data attributes
 					let detailFill =   `<div class="img_detail">
 											  <img class="img-responsivel" src="../imgs/${that.img}">
@@ -30,21 +29,21 @@
 											   <small>Lien: <a target="_blank" href="${that.external_link}">${that.linkCap}</a></small>
 											  <br>
 											</div>`;
-					
 					//Function to search article
 					articles.data.forEach(() => {
-						//console.log(that.id);
-						
 						//Search by ID and insert template
 						if(that.id === id){
 							return $('#articleContent').html(detailFill);
 						}
 					})
 				}
-				
+                    // CHECK ARTICLE ID
+                    let url = window.location.href;
+                    let queryString = url.split("?")[1];
+                    let articleId = queryString.split("=")[1];
 				//Call the function with argument of ID
-				articleDetail(9);
-			
+				articleDetail(parseInt(articleId));
+
 			} else {
 				alert(`Status: ${req.status} - Could not load this article`);
 			}
@@ -52,6 +51,5 @@
 		  console.log("Loading");
 		}
 	}
-
   req.send();
 })();
