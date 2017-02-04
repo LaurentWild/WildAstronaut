@@ -1,61 +1,51 @@
 
 function loadFirstArticleView(article) {
-     //console.log(article);
-     $('.firstArticle').load('../views/big_article_view.html', function(responseTxt, statusTxt, xhr){
+     $('#firstArticle').load('../views/big_article_view.html', function(responseTxt, statusTxt, xhr){
           if(statusTxt == "success") {
-
-
-
-               var html = $.parseHTML(responseTxt.trim())[0];
-               var img = html.querySelector("img");
+               // FIRST DIV
+               let firstDiv = $(this).context.children[0];
+               firstDiv.setAttribute("id", "divArticle" + article.id);
+               firstDiv.className += " v1";
+               // IMAGE
+               let img = firstDiv.querySelector("img");
+               img.setAttribute("id", "img" + article.id);
                img.setAttribute("src", "../imgs/" + article.img);
-
-
-               console.log(img);
-               console.log(article.img);
-
-
-
-               // console.log("Response TXT : ")
-               // console.log(responseTxt);
-               // console.log("statusTxt" + statusTxt);
-               // console.log("xhr")
-               // console.log(xhr);
-               // console.log(img);
-               // console.log($.parseHTML(responseTxt.trim()))
-               // $.each( html, function( i, el ) {
-               // //   console.log(el.nodeName);
-               //
-               //
-               // });
-               // console.log(html);
-               // let html = $.parseHTML(responseTxt);
-               // $.each( html, function( i, el ) {
-               //   console.log(el.nodeName[0]);
-               // });
-               //html.querySelector('#title').innerHTML = "zerrreezeedgdfhdfgfhfhfghfghfghfg";
-               //$('#title').id = 'title' + article.id;
-               // console.log("trtr" + html);
-
-               $('#title').text("eeee");
-               $('#desc').text(article.desc);
-               // $('#articleImg').attr("src", '../imgs/' + article.img);// + article.img
-               // $('.view-first > img').attr("src", "../imgs/");
-               // console.log($('.view-first > img'));
-
-          }
-          if(statusTxt == "error") {
-              alert("Error: " + xhr.status + ": " + xhr.statusText);
-          }
+               img.setAttribute("id", "img" + article.id);
+               // TITLE
+               let title = firstDiv.querySelector("h3");
+               title.setAttribute("id", "title" + article.id);
+               title.innerHTML = article.title;
+               // DESC
+               let desc = firstDiv.querySelector("p");
+               desc.setAttribute("id", "desc" + article.id);
+               desc.innerHTML = article.desc;
+           }
+           if(statusTxt == "error") {
+               alert("Error: " + xhr.status + ": " + xhr.statusText);
+           }
      });
 }
 
 function loadSecondArticleView(article) {
-     $('.secondArticle').load('../views/large_article_view.html', function(responseTxt, statusTxt, xhr){
+     $('#secondArticle').load('../views/large_article_view.html', function(responseTxt, statusTxt, xhr){
           if(statusTxt == "success") {
-               $('#titleZ').text(article.title);
-               $('#desc').text(article.desc);
-               $('#articleImg2').attr("src", '../imgs/' + article.img);// + article.img
+               // FIRST DIV
+               let firstDiv = $(this).context.children[0];
+               firstDiv.setAttribute("id", "divArticle" + article.id);
+               firstDiv.className += " v1";
+               // IMAGE
+               let img = firstDiv.querySelector("img");
+               img.setAttribute("id", "img" + article.id);
+               img.setAttribute("src", "../imgs/" + article.img);
+               img.setAttribute("id", "img" + article.id);
+               // TITLE
+               let title = firstDiv.querySelector("h3");
+               title.setAttribute("id", "title" + article.id);
+               title.innerHTML = article.title;
+               // DESC
+               let desc = firstDiv.querySelector("p");
+               desc.setAttribute("id", "desc" + article.id);
+               desc.innerHTML = article.desc;
           }
           if(statusTxt == "error") {
               alert("Error: " + xhr.status + ": " + xhr.statusText);
@@ -64,11 +54,25 @@ function loadSecondArticleView(article) {
 }
 
 function loadThirdArticleView(article) {
-     $('.thirdArticle').load('../views/big_article_view.html', function(responseTxt, statusTxt, xhr){
+     $('#thirdArticle').load('../views/big_article_view.html', function(responseTxt, statusTxt, xhr){
           if(statusTxt == "success") {
-               $('#title').text(article.title);
-               $('#desc').text(article.desc);
-               $('.articleImgZ').attr("src", '../imgs/' + article.img);// + article.img
+               // FIRST DIV
+               let firstDiv = $(this).context.children[0];
+               firstDiv.setAttribute("id", "divArticle" + article.id);
+               firstDiv.className += " v1";
+               // IMAGE
+               let img = firstDiv.querySelector("img");
+               img.setAttribute("id", "img" + article.id);
+               img.setAttribute("src", "../imgs/" + article.img);
+               img.setAttribute("id", "img" + article.id);
+               // TITLE
+               let title = firstDiv.querySelector("h3");
+               title.setAttribute("id", "title" + article.id);
+               title.innerHTML = article.title;
+               // DESC
+               let desc = firstDiv.querySelector("p");
+               desc.setAttribute("id", "desc" + article.id);
+               desc.innerHTML = article.desc;
           }
           if(statusTxt == "error") {
               alert("Error: " + xhr.status + ": " + xhr.statusText);
@@ -77,12 +81,25 @@ function loadThirdArticleView(article) {
 }
 
 function loadFourthArticleView(article) {
-     $('.fourthArticle').load('../views/big_article_view.html', function(responseTxt, statusTxt, xhr){
+     $('#fourthArticle').load('../views/big_article_view.html', function(responseTxt, statusTxt, xhr){
           if(statusTxt == "success") {
-
-               $('#title').text(article.title);
-               $('#desc').text(article.desc);
-               $('#articleImg').attr("src", '../imgs/' + article.img);// + article.img
+               // FIRST DIV
+               let firstDiv = $(this).context.children[0];
+               firstDiv.setAttribute("id", "divArticle" + article.id);
+               firstDiv.className += " v1";
+               // IMAGE
+               let img = firstDiv.querySelector("img");
+               img.setAttribute("id", "img" + article.id);
+               img.setAttribute("src", "../imgs/" + article.img);
+               img.setAttribute("id", "img" + article.id);
+               // TITLE
+               let title = firstDiv.querySelector("h3");
+               title.setAttribute("id", "title" + article.id);
+               title.innerHTML = article.title;
+               // DESC
+               let desc = firstDiv.querySelector("p");
+               desc.setAttribute("id", "desc" + article.id);
+               desc.innerHTML = article.desc;
           }
           if(statusTxt == "error") {
               alert("Error: " + xhr.status + ": " + xhr.statusText);
@@ -92,10 +109,11 @@ function loadFourthArticleView(article) {
 
 function loadLeftArticleRow(articles) {
 
-     // console.log(articles[0].title)
-     $('.articles_row').load('../views/left_article_row.html', function(responseTxt, statusTxt, xhr){
+     // console.log(articles[0].title);
+     $('#articlesRow').load('../views/left_article_row.html', function(responseTxt, statusTxt, xhr){
           if(statusTxt === "success") {
                loadFirstArticleView(articles[0]);
+                    // console.log("gfghfhfghfghfghe");
                loadSecondArticleView(articles[1]);
                loadThirdArticleView(articles[2]);
                loadFourthArticleView(articles[3]);
@@ -111,6 +129,7 @@ function loadLeftArticleRow(articles) {
 function addArticlesRow(articles) {
      $('.articles').load('../views/articles_row.html', function(responseTxt, statusTxt, xhr){
           if(statusTxt == "success") {
+               // console.log("102");
                loadLeftArticleRow(articles);
           }
           if(statusTxt == "error") {
@@ -124,13 +143,10 @@ function addArticlesBlock(articles) {
      let nbreArticles = articles.length;
      //NBRE DE ROWS
      let rows = Math.ceil(articles.length / 4);
-          // console.log(rows);
-
      // POUR CHAQUE ROWS
      for (let i = 0; i < rows; i++) {
-          // console.log(articles);
+          // console.log("118");
           addArticlesRow(articles);
-
      }
 }
 
@@ -141,7 +157,7 @@ $(document).ready(function() {
           dataType: 'json',
           success: function( data ) {
                let i = 0;
-               console.log(data);
+               // console.log(data);
                for(item of data) {
                     i++;
                     let article = new Article(item);
@@ -149,7 +165,7 @@ $(document).ready(function() {
                     articles.push(article);
                     if(i === 4) break;
                }
-               console.log("ART =>" + articles);
+               // console.log("ART =>" + articles);
                addArticlesBlock(articles);
           },
           error: function( data ) {
