@@ -53,9 +53,8 @@ function displayArticle(firstDiv, article, descStyle) {
      desc.innerHTML = article.desc;
 }
 
-function loadLeftArticleRow(articles, row) {
-console.log("left" + row);
-     $('#articlesRow' + row).load('../views/left_article_row.html', function(responseTxt, statusTxt, xhr){
+function loadArticleRow(articles, file, row) {
+     $('#articlesRow' + row).load(file, function(responseTxt, statusTxt, xhr){
           if(statusTxt === "success") {
                // UPDATE ID FIRST ARTICLE
                let firstArticle = $(this).context.querySelector("#firstArticle");
@@ -87,42 +86,6 @@ console.log("left" + row);
           }
      });
 }
-
-function loadRightArticleRow(articles, row) {
-console.log("right" + row);
-     $('#articlesRow' + row).load('../views/right_article_row.html', function(responseTxt, statusTxt, xhr){
-          if(statusTxt === "success") {
-               // UPDATE ID FIRST ARTICLE
-               let firstArticle = $(this).context.querySelector("#firstArticle");
-               firstArticle.setAttribute("id", "firstArticle" + row);
-               // UPDATE ID SECOND ARTICLE
-               let secondArticle = $(this).context.querySelector("#secondArticle");
-               secondArticle.setAttribute("id", "secondArticle" + row);
-               // UPDATE ID THIRD ARTICLE
-               let thirdArticle = $(this).context.querySelector("#thirdArticle");
-               thirdArticle.setAttribute("id", "thirdArticle" + row);
-               // UPDATE ID FOURTH ARTICLE
-               let fourthArticle = $(this).context.querySelector("#fourthArticle");
-               fourthArticle.setAttribute("id", "fourthArticle" + row);
-               // ADD
-               let file = '../views/article_view.html';
-               let divIds = ["#firstArticle", "#secondArticle", "#thirdArticle", "#fourthArticle"];
-               let descStyles = ["v1", "v2","v4", "v4"];
-               for(let i in divIds) {
-                    // NUM ARTICLE
-                    let numArticle = 4 * row + parseInt(i);
-                    // console.log("row =" + row + " numArticle = " + numArticle);
-                    let article = articles[numArticle];
-                    if(articles[numArticle] === undefined) aricle = null;
-                    loadArticleView(article, divIds[i] + row, file, descStyles[i]);
-               }
-          }
-          if(statusTxt === "error") {
-              alert("Error: " + xhr.status + ": " + xhr.statusText);
-          }
-     });
-}
-
 
 function addArticlesRow(articles, row) {
      // AJOUTE UN NOUVEAU DIV BLOCK
@@ -136,12 +99,11 @@ function addArticlesRow(articles, row) {
                // MIS A JOUR ID
                let articlesRow = $(this).context.querySelector("#articlesRow");
                articlesRow.setAttribute("id", "articlesRow" + row);
-               if(parseInt(row) % 2 === 0) {
-                    loadLeftArticleRow(articles, row);
+               let file = '../views/left_article_row.html';
+               if(parseInt(row) % 2 !== 0) {
+                    file = '../views/right_article_row.html';
                }
-               else {
-                    loadRightArticleRow(articles, row);
-               }
+               loadArticleRow(articles, file, row);
           }
           if(statusTxt == "error") {
               alert("Error: " + xhr.status + ": " + xhr.statusText);
