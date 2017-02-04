@@ -169,7 +169,7 @@ ul#nav li a:hover{
 	float:right;
 	display:inline-block;
 	max-width:50%;
-	margin:20px 0 20px 20px;
+	margin:20px 0 10px 20px;
 	text-align:center;
 }
 .article_detail img{
@@ -181,6 +181,7 @@ ul#nav li a:hover{
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
+		text-align:justify;
 }
 
 h3.banner{
