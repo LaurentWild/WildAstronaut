@@ -60,12 +60,14 @@ function displayArticle(firstDiv, article, descStyle, imageSize) {
      firstDiv.className += " " + descStyle;
      // IMAGE
      let img = firstDiv.querySelector("img");
-     img.setAttribute("id", "img" + article.id);
-     img.setAttribute("src", "../imgs/" + article.img);
-     img.setAttribute("id", "img" + article.id);
+     let image = article.img;
      if(imageSize === "rectangle") {
-
+          let imgTab = article.img.split("_");
+          image = imgTab[0] + "_r.jpeg";
      }
+     img.setAttribute("id", "img" + article.id);
+     img.setAttribute("src", "../imgs/" + image);
+     img.setAttribute("id", "img" + article.id);
      // TITLE
      let title = firstDiv.querySelector("h3");
      title.setAttribute("id", "title" + article.id);
