@@ -11,7 +11,24 @@
     <div class="container">
       <header>
       </header>
-      <div id="articles">
+      
+      <div class="row rowAdjust">
+        <div class="col-xs-12 text-center">
+          <form class="form-inline" action="#">
+            <div class="form-group">
+              <!-- <label for="cityChoise">Tema: </label> -->
+              <input id="searchArticle" type="text" class="form-control" placeholder="Search..">
+            </div>
+            <button id="bSearch" type="button" class="btn btn-default" autofocus="auto" >Go Find</button>
+            
+              <button id="id" type="button" class="btn btn-default" autofocus="auto" >Order by ID</button>
+              <button id="dateFormated" type="button" class="btn btn-default" autofocus="auto" >Order by DATE</button>
+            
+          </form>
+        </div>
+      </div>
+      
+      <div id="articles" class="allArticles">
       </div>
       <footer>
       </footer>
