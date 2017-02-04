@@ -1,5 +1,4 @@
 //'use strict'
-
 (function() {
 // Create HttpRequest
 let req = new XMLHttpRequest();

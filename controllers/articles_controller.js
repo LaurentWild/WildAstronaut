@@ -1,3 +1,4 @@
+//'use strict'
 function loadArticleView(article, divId, file, descStyle) {
      if(article !== undefined) {
           // console.log("art = " + article, divId, file, descStyle)
