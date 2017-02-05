@@ -1,7 +1,6 @@
 //'use strict'
 function loadArticleView(article, divId, file, descStyle) {
      if(article !== undefined) {
-          // console.log("art = " + article, divId, file, descStyle)
           $(divId).load(file, function(responseTxt, statusTxt, xhr){
                if(statusTxt == "success") {
                     // UPDATE ID LINK
@@ -78,7 +77,6 @@ function loadArticleRow(articles, file, row) {
                for(let i in divIds) {
                     // NUM ARTICLE
                     let numArticle = 4 * row + parseInt(i);
-                    // console.log("row =" + row + " numArticle = " + numArticle);
                     let article = articles[numArticle];
                     if(articles[numArticle] === undefined) aricle = null;
                     loadArticleView(article, divIds[i] + row, file, descStyles[i]);
@@ -115,6 +113,7 @@ function addArticlesRow(articles, row) {
 }
 
 function addArticlesBlock(articles) {
+     $("#articles").html(" ");
      // NOMBRE ARTICLES
      let nbreArticles = articles.length;
      //NBRE DE ROWS
@@ -125,27 +124,130 @@ function addArticlesBlock(articles) {
      }
 }
 
-$(document).ready(function() {
-     let articles = [];
-     // CHECK ARTICLES DIV
-     let divArticles = document.querySelector("#articles");
-     $.ajax({
-          url: '../json/articles.json',
-          dataType: 'json',
-          success: function( data ) {
-               let i = 0;
-               for(item of data) {
-                    i++;
-                    let article = new Article(item);
-                    articles.push(article);
-                    if(divArticles.className.split(" ")[0] === "a4") {
-                         if(i === 4) break;
+(function() {
+     // Create HttpRequest
+     let req = new XMLHttpRequest();
+     let url = "/json/articles.json";
+     req.open('GET', url, true);
+     req.onreadystatechange = function(event) {
+          if (req.readyState === 4){
+               if (req.status === 200){
+                    let articlesJSON = JSON.parse(req.responseText);
+                    let articles = new Articles(articlesJSON);
+                    //START FILTER FEATURE
+                    let that = articles.data;
+                    articlesData = [];
+                    // CHECK ARTICLES DIV
+                    let divArticles = document.querySelector("#articles");
+                    let i = 0;
+                    for(item of that) {
+                         i++;
+                         let article = new Article(item);
+                         articlesData.push(article);
+                         if(divArticles.className.split(" ")[0] === "a4") {
+                              if(i === 4) break;
+                         }
                     }
+                    addArticlesBlock(articlesData);
+                    /* //Build table initial
+                    makeTable(articles); */
+                    //set initial order of Table
+                    let statusTable= 0;
+                    //set function to call fillter of search and rebuild table
+                    let filterOn = function(e){
+                         e.preventDefault();
+                         articles.filterArticles(filter.value);
+                         console.log(articles);
+                         addArticlesBlock(articles.data);
+                    }
+                    // set var for the input
+                    let filter = document.querySelector("#searchArticle");
+                    let bGO = document.querySelector("#bSearch");
+                    bGO.addEventListener("click", filterOn, false);
+                    $("#searchArticle").keyup(function(e) {
+                         if (e.which == 13) {
+                              console.log("oii")
+                              filterOn(e);
+                              e.preventDefault();
+                         }
+                    });
+                    // add event listener for order of buttons
+                    let orderB = document.querySelector("#id");
+                    orderB.addEventListener("click", sort, false);
+                    let orderD = document.querySelector("#dateFormated");
+                    orderD.addEventListener("click", sort, false);
+                    //function to sort by ID and Date as item is clicked
+                    function sort(e){
+                         let clickedItem = this.id;
+                         e.preventDefault();
+                         //check status of the table to define direction
+                         if (statusTable === 0 || statusTable === 1){
+                              //reorder the table
+                              articles.data.sort(function (a, b){
+                                   //change status of the table if ID
+                                   if (clickedItem === "id"){
+                                        return a[clickedItem] - b[clickedItem];
+                                        //If DATE
+                                   } else{
+                                        a = a[clickedItem];
+                                        b = b[clickedItem];
+                                        return a - b;
+                                   }
+                              });
+                              // change status of table
+                              statusTable = 2;
+                              //Sort reverse
+                         } else{
+                              articles.data.sort(function (a, b){
+                                   if (clickedItem === "id"){
+                                        //console.log("ID works")// Check if click ID works
+                                        return b[clickedItem] - a[clickedItem];
+                                        //Reverse DATE
+                                   } else{
+                                        a = a[clickedItem];
+                                        b = b[clickedItem];
+                                        return b - a;
+                                   }
+                              });
+                              // change status of table
+                              statusTable = 1;
+                         }
+                         //console.log("Status of table is: " + statusTable);//Check status of table after click
+                         //rebuild
+                         addArticlesBlock(articles.data);
+                         e.stopPropagation();
+                         e.preventDefault();
+                    }
+               } else {
+                    alert(`Status: ${req.status} - Could not load this article`);
                }
-               addArticlesBlock(articles);
-          },
-          error: function( data ) {
-               alert( "ERROR:  " + data );
+          } else {
+               console.log("Loading");
           }
-     });
-});
+     }
+req.send();
+})();
+// $(document).ready(function() {
+//      let articles = [];
+//      // CHECK ARTICLES DIV
+//      let divArticles = document.querySelector("#articles");
+//      $.ajax({
+//           url: '../json/articles.json',
+//           dataType: 'json',
+//           success: function( data ) {
+//                let i = 0;
+//                for(item of data) {
+//                     i++;
+//                     let article = new Article(item);
+//                     articles.push(article);
+//                     if(divArticles.className.split(" ")[0] === "a4") {
+//                          if(i === 4) break;
+//                     }
+//                }
+//                addArticlesBlock(articles);
+//           },
+//           error: function( data ) {
+//                alert( "ERROR:  " + data );
+//           }
+//      });
+// });
