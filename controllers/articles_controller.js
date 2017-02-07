@@ -160,6 +160,30 @@ function addArticlesBlock(articles) {
                          console.log(articles);
                          addArticlesBlock(articles.data);
                     }
+
+
+                    // je récupère le tableau articlesData[]
+                         //console.log(articles);
+                         let tagsInfo = []
+                         let a = 0;
+                    for(item of that) {
+                         a++;
+                         let tagsData = new Article(item);
+                         //console.log(tagsData);
+                         let titi = tagsInfo.push(tagsData.tags);
+                         console.log(tagsInfo);
+                         var toto = tagsInfo.toString();
+                         console.log(toto) //j'ai oté les guillemets
+
+                    }    
+                    //alert(toto);
+                    function uniq(toto) {
+                    return toto.sort().filter(function(item, pos, ary) {
+                        return !pos || item != ary[pos - 1];
+                    });
+                    }
+
+ 
                     // set var for the input
                     let filter = document.querySelector("#searchArticle");
                     let bGO = document.querySelector("#bSearch");
@@ -171,6 +195,8 @@ function addArticlesBlock(articles) {
                               e.preventDefault();
                          }
                     });
+
+                    
                     // add event listener for order of buttons
                     let orderB = document.querySelector("#id");
                     orderB.addEventListener("click", sort, false);
@@ -227,6 +253,8 @@ function addArticlesBlock(articles) {
      }
 req.send();
 })();
+
+
 // $(document).ready(function() {
 //      let articles = [];
 //      // CHECK ARTICLES DIV
