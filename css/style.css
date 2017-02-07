@@ -54,6 +54,22 @@ header {
 	text-transform: uppercase;
 }
 
+#searchHolder{
+	width:100%;
+	text-align:right;
+	position:absolute;
+	top:40px;
+	right:20px;
+}
+#searchHolder .form-control{
+	width:auto !important;
+	display:inline-block !important;
+}
+#searchHolder #bSearch{
+	width:auto !important;
+	display:inline-block !important;
+}
+
 #banner {
 	display:block;
 	width:100%;
@@ -313,6 +329,30 @@ footer {
 		left:0;
 		margin: 0 0 0 0;
 	}
+	
+	
+	
+	#searchHolder{
+		width:250px;
+		display:block;
+		text-align:right;
+		position:absolute;
+		top:30px;
+		right:20px;
+	}
+	#searchHolder .form-control{
+		width:auto !important;
+		display:inline-block !important;
+		margin-right:50px;
+	}
+	#searchHolder #bSearch{
+		position:absolute;
+		top:0px;
+		right:0px;
+		width:auto !important;
+		display:inline-block !important;
+	}
+	
 	p.titre-pres{
 		text-align:center !important;
 		margin-top:20px;
@@ -356,7 +396,7 @@ footer {
 	#logo {
 		width:130px;
 		top: 15px;
-		left: 20%;
+		left: 20px;
 	}
 	#logo h1 {
 		width:150%;
@@ -366,6 +406,28 @@ footer {
 		left: 60%;
 		font-size: 20px;
 	}
+	
+	#searchHolder{
+		width:250px;
+		display:block;
+		text-align:right;
+		position:absolute;
+		top:110px;
+		right:20px;
+	}
+	#searchHolder .form-control{
+		width:auto !important;
+		display:inline-block !important;
+		margin-right:50px;
+	}
+	#searchHolder #bSearch{
+		position:absolute;
+		top:0px;
+		right:0px;
+		width:auto !important;
+		display:inline-block !important;
+	}
+	
 	#banner {
 		padding:6px 5% 6px;
 		text-align:center;
@@ -379,7 +441,16 @@ footer {
 		margin:40px 0;
 	}
 }
-
+@media screen and (max-width: 450px) {
+	#logo {
+		width:100px;
+		top: 5px;
+		left: 18%;
+	}
+	#logo h1 {
+		font-size: 16px;
+	}
+}
 
 /*   ANIMATION HOVER  */
 

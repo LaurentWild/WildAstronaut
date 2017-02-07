@@ -163,6 +163,7 @@ function addArticlesBlock(articles) {
                     // set var for the input
                     let filter = document.querySelector("#searchArticle");
                     let bGO = document.querySelector("#bSearch");
+										console.log(bGO);
                     bGO.addEventListener("click", filterOn, false);
                     $("#searchArticle").keyup(function(e) {
                          if (e.which == 13) {
