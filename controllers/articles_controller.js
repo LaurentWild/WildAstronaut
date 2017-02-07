@@ -171,6 +171,28 @@ function addArticlesBlock(articles) {
                               e.preventDefault();
                          }
                     });
+
+let tt = ["soleil", "lune", "soleil", "lune", "soleil", "lune", "terre", "mars"];
+
+                    function uniq(a) {
+                        return a.sort().filter(function(item, pos, ary) {
+                            return !pos || item != ary[pos - 1];
+                        })
+                    }
+
+     console.log(uniq(tt));
+
+                         $('.tag').on('click', function() {
+                              console.log("errrr");
+articles.filterArticles($(this).text());
+addArticlesBlock(articles.data);
+
+                         });
+
+
+
+
+
                     // add event listener for order of buttons
                     let orderB = document.querySelector("#id");
                     orderB.addEventListener("click", sort, false);
