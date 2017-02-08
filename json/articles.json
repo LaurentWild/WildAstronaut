@@ -29,11 +29,7 @@
     "tags":"microscope",
     "id":2
 }, {
-<<<<<<< HEAD
     "title": "Vénus : l'image d'Akatsuki",
-=======
-    "title": "Vénus : image transmise par Akatsuki",
->>>>>>> brachTagsJS
     "date": "2017-01-08",
     "external_link": "http://www.futura-sciences.com/",
     "img":"art4_c.jpeg",
@@ -63,11 +59,7 @@
     "tags":"Terre, étoile",
     "id":5
 }, {
-<<<<<<< HEAD
-    "title": "Gene Cernan à marché sur la Lune",
-=======
     "title": "Gene Cernan a marché sur la Lune",
->>>>>>> brachTagsJS
     "date": "2017-01-23",
     "external_link": "http://www.futura-sciences.com/",
     "img":"art7_c.jpeg",
