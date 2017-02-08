@@ -1,4 +1,4 @@
-//'use strict'
+'use strict'
 function loadArticleView(article, divId, file, descStyle) {
      if(article !== undefined) {
           $(divId).load(file, function(responseTxt, statusTxt, xhr){
@@ -138,11 +138,11 @@ function addArticlesBlock(articles) {
                     let articles = new Articles(articlesJSON);
                     //START FILTER FEATURE
                     let that = articles.data;
-                    articlesData = [];
+                    let articlesData = [];
                     // CHECK ARTICLES DIV
                     let divArticles = document.querySelector("#articles");
                     let i = 0;
-                    for(item of that) {
+                    for(let item of that) {
                          i++;
                          let article = new Article(item);
                          articlesData.push(article);
@@ -150,7 +150,7 @@ function addArticlesBlock(articles) {
                               if(i === 4) break;
                          }
                     }
-                    addArticlesBlock(articlesData);
+										addArticlesBlock(articlesData);
                     
 										//set current location page
 										let currentLoc = location.pathname.split("/");
