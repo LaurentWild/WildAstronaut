@@ -12,6 +12,7 @@ class Article {
 		this.contenu = json.contenu;
 		this.author = json.author;
 		this.tags = json.tags;
+		this.tagsDivided = this.tagRebuild(json.tags);
 		this.id = json.id;
 	}
 
@@ -44,6 +45,11 @@ class Article {
 	//date reformated
 	dateRebuild(date){
 		let divide = date.replace(/-/gi, '- ').split('-');
+		return divide;
+	}
+	//tag reformated
+	tagRebuild(tags){
+		let divide = tags.split(', ');
 		return divide;
 	}
 }
