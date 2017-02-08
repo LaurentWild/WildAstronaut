@@ -137,6 +137,8 @@ function addArticlesBlock(articles) {
                     //START FILTER FEATURE
                     let that = articles.data;
                     articlesData = [];
+                    // TAGS TAB
+                    let tagsInfos = [];
                     // CHECK ARTICLES DIV
                     let divArticles = document.querySelector("#articles");
                     let i = 0;
@@ -147,7 +149,29 @@ function addArticlesBlock(articles) {
                          if(divArticles.className.split(" ")[0] === "a4") {
                               if(i === 4) break;
                          }
+                         // RECUP LES TAGS
+                         let tags = article.tags.split(", ");
+                         for (let tag of tags) {
+                              // AJOUTE CHAQUE TAG DANS TAGSINFOS
+                              tagsInfos.push(tag);
+                         }
                     }
+                    // ENLEVE LES TAGS EN DOUBLONS
+                    uniq(tagsInfos);
+                    function uniq(tagsInfos) {
+                         return tagsInfos.sort().filter(function(item, pos, ary) {
+                             return !pos || item != ary[pos - 1];
+                         });
+                    }
+                    console.log(uniq(tagsInfos));
+                    //AFFICHE LES TAGS
+                    for (let tag of tagsInfos) {
+                         $('#tagsPlacer').append(`<span class="label label-primary tag"><a class="label label-primary" href="articles.html?tag=${encodeURIComponent(tag)}">${tag}</a></span>`);
+                    }
+
+
+
+                    //  AFFICHE TOUT UNE PREMIERE FOIS
                     addArticlesBlock(articlesData);
                     /* //Build table initial
                     makeTable(articles); */
@@ -157,7 +181,6 @@ function addArticlesBlock(articles) {
                     let filterOn = function(e){
                          e.preventDefault();
                          articles.filterArticles(filter.value);
-                         console.log(articles);
                          addArticlesBlock(articles.data);
                     }
                     // set var for the input
@@ -166,33 +189,21 @@ function addArticlesBlock(articles) {
                     bGO.addEventListener("click", filterOn, false);
                     $("#searchArticle").keyup(function(e) {
                          if (e.which == 13) {
-                              console.log("oii")
                               filterOn(e);
                               e.preventDefault();
                          }
                     });
-
-let tt = ["soleil", "lune", "soleil", "lune", "soleil", "lune", "terre", "mars"];
-
-                    function uniq(a) {
-                        return a.sort().filter(function(item, pos, ary) {
-                            return !pos || item != ary[pos - 1];
-                        })
+                    // CHECK IF TAG TO FILTER
+                    let urlTagged = window.location.href;
+                    // SI YA UN ?
+                    if(urlTagged.indexOf('?') > -1) {
+                         // SI CEST UN TAG
+                         if(urlTagged.split("?")[1].split("=")[0] === "tag") {
+                              let tag = decodeURIComponent(urlTagged.split("?")[1].split("=")[1]);
+                              articles.filterArticles(tag);
+                              addArticlesBlock(articles.data);
+                         }
                     }
-
-     console.log(uniq(tt));
-
-                         $('.tag').on('click', function() {
-                              console.log("errrr");
-articles.filterArticles($(this).text());
-addArticlesBlock(articles.data);
-
-                         });
-
-
-
-
-
                     // add event listener for order of buttons
                     let orderB = document.querySelector("#id");
                     orderB.addEventListener("click", sort, false);
