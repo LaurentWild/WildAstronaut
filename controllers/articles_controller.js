@@ -1,4 +1,4 @@
-//'use strict'
+'use strict'
 function loadArticleView(article, divId, file, descStyle) {
      if(article !== undefined) {
           $(divId).load(file, function(responseTxt, statusTxt, xhr){
@@ -78,7 +78,7 @@ function loadArticleRow(articles, file, row) {
                     // NUM ARTICLE
                     let numArticle = 4 * row + parseInt(i);
                     let article = articles[numArticle];
-                    if(articles[numArticle] === undefined) aricle = null;
+                    if(articles[numArticle] === undefined) article = null;
                     loadArticleView(article, divIds[i] + row, file, descStyles[i]);
                }
           }
@@ -124,6 +124,8 @@ function addArticlesBlock(articles) {
      }
 }
 
+
+
 (function() {
      // Create HttpRequest
      let req = new XMLHttpRequest();
@@ -136,13 +138,13 @@ function addArticlesBlock(articles) {
                     let articles = new Articles(articlesJSON);
                     //START FILTER FEATURE
                     let that = articles.data;
-                    articlesData = [];
                     // TAGS TAB
                     let tagsInfos = [];
+                    let articlesData = [];
                     // CHECK ARTICLES DIV
                     let divArticles = document.querySelector("#articles");
                     let i = 0;
-                    for(item of that) {
+                    for(let item of that) {
                          i++;
                          let article = new Article(item);
                          articlesData.push(article);
@@ -157,42 +159,21 @@ function addArticlesBlock(articles) {
                          }
                     }
                     // ENLEVE LES TAGS EN DOUBLONS
-                    uniq(tagsInfos);
                     function uniq(tagsInfos) {
                          return tagsInfos.sort().filter(function(item, pos, ary) {
                              return !pos || item != ary[pos - 1];
                          });
                     }
-                    console.log(uniq(tagsInfos));
                     //AFFICHE LES TAGS
-                    for (let tag of tagsInfos) {
+                    for (let tag of uniq(tagsInfos)) {
                          $('#tagsPlacer').append(`<span class="label label-primary tag"><a class="label label-primary" href="articles.html?tag=${encodeURIComponent(tag)}">${tag}</a></span>`);
                     }
-
-
-
-                    //  AFFICHE TOUT UNE PREMIERE FOIS
-                    addArticlesBlock(articlesData);
-                    /* //Build table initial
-                    makeTable(articles); */
-                    //set initial order of Table
-                    let statusTable= 0;
                     //set function to call fillter of search and rebuild table
                     let filterOn = function(e){
                          e.preventDefault();
                          articles.filterArticles(filter.value);
                          addArticlesBlock(articles.data);
                     }
-                    // set var for the input
-                    let filter = document.querySelector("#searchArticle");
-                    let bGO = document.querySelector("#bSearch");
-                    bGO.addEventListener("click", filterOn, false);
-                    $("#searchArticle").keyup(function(e) {
-                         if (e.which == 13) {
-                              filterOn(e);
-                              e.preventDefault();
-                         }
-                    });
                     // CHECK IF TAG TO FILTER
                     let urlTagged = window.location.href;
                     // SI YA UN ?
@@ -203,53 +184,17 @@ function addArticlesBlock(articles) {
                               articles.filterArticles(tag);
                               addArticlesBlock(articles.data);
                          }
-                    }
-                    // add event listener for order of buttons
-                    let orderB = document.querySelector("#id");
-                    orderB.addEventListener("click", sort, false);
-                    let orderD = document.querySelector("#dateFormated");
-                    orderD.addEventListener("click", sort, false);
-                    //function to sort by ID and Date as item is clicked
-                    function sort(e){
-                         let clickedItem = this.id;
-                         e.preventDefault();
-                         //check status of the table to define direction
-                         if (statusTable === 0 || statusTable === 1){
-                              //reorder the table
-                              articles.data.sort(function (a, b){
-                                   //change status of the table if ID
-                                   if (clickedItem === "id"){
-                                        return a[clickedItem] - b[clickedItem];
-                                        //If DATE
-                                   } else{
-                                        a = a[clickedItem];
-                                        b = b[clickedItem];
-                                        return a - b;
-                                   }
-                              });
-                              // change status of table
-                              statusTable = 2;
-                              //Sort reverse
-                         } else{
-                              articles.data.sort(function (a, b){
-                                   if (clickedItem === "id"){
-                                        //console.log("ID works")// Check if click ID works
-                                        return b[clickedItem] - a[clickedItem];
-                                        //Reverse DATE
-                                   } else{
-                                        a = a[clickedItem];
-                                        b = b[clickedItem];
-                                        return b - a;
-                                   }
-                              });
-                              // change status of table
-                              statusTable = 1;
+                         else if(urlTagged.split("?")[1].split("=")[0] === "search") {
+     					//take the word searched
+                              let searchWord = decodeURIComponent(urlTagged.split("?")[1].split("=")[1]);
+     					//console.log(searchWord);//check searched word
+     					articles.filterArticles(searchWord);
+     					addArticlesBlock(articles.data);
                          }
-                         //console.log("Status of table is: " + statusTable);//Check status of table after click
-                         //rebuild
-                         addArticlesBlock(articles.data);
-                         e.stopPropagation();
-                         e.preventDefault();
+                    }
+                    else {
+                         //  AFFICHE TOUT UNE PREMIERE FOIS
+                         addArticlesBlock(articlesData);
                     }
                } else {
                     alert(`Status: ${req.status} - Could not load this article`);
@@ -260,27 +205,3 @@ function addArticlesBlock(articles) {
      }
 req.send();
 })();
-// $(document).ready(function() {
-//      let articles = [];
-//      // CHECK ARTICLES DIV
-//      let divArticles = document.querySelector("#articles");
-//      $.ajax({
-//           url: '../json/articles.json',
-//           dataType: 'json',
-//           success: function( data ) {
-//                let i = 0;
-//                for(item of data) {
-//                     i++;
-//                     let article = new Article(item);
-//                     articles.push(article);
-//                     if(divArticles.className.split(" ")[0] === "a4") {
-//                          if(i === 4) break;
-//                     }
-//                }
-//                addArticlesBlock(articles);
-//           },
-//           error: function( data ) {
-//                alert( "ERROR:  " + data );
-//           }
-//      });
-// });
