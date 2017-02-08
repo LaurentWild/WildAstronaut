@@ -166,7 +166,7 @@ function addArticlesBlock(articles) {
                     }
                     //AFFICHE LES TAGS
                     for (let tag of uniq(tagsInfos)) {
-                         $('#tagsPlacer').append(`<span class="label label-primary tag"><a class="label label-primary" href="articles.html?tag=${encodeURIComponent(tag)}">${tag}</a></span>`);
+                         $('#tagsPlacer').append(`<span class="label label-primary tag"><a href="articles.html?tag=${encodeURIComponent(tag)}">${tag}</a></span>`);
                     }
                     //set function to call fillter of search and rebuild table
                     let filterOn = function(e){

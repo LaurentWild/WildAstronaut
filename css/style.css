@@ -193,6 +193,7 @@ ul#nav li a:hover{
 #tagsPlacer{
 	margin:10px 0;
 	display:block;
+	padding:0 7% 20px;
 }
 #tagsPlacer span{
 	margin:0 10px 0 0;
