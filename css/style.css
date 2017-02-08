@@ -190,10 +190,13 @@ ul#nav li a:hover{
 .article_detail img{
 	max-width:100%;
 }
+.tagsFix{
+	padding:0 8% 20px !important;
+}
 #tagsPlacer{
 	margin:10px 0;
 	display:block;
-	padding:0 7% 20px;
+	padding:0 0 20px;
 }
 #tagsPlacer span{
 	margin:0 10px 0 0;
