@@ -37,8 +37,6 @@ class Article {
 		 return this.contenu.toLowerCase().includes(string.toLowerCase()) +
 				this.title.toLowerCase().includes(string.toLowerCase()) +
 				this.desc.toLowerCase().includes(string.toLowerCase()) +
-				this.contenu.toLowerCase().includes(string.toLowerCase()) +
-				this.tags.toLowerCase().includes(string.toLowerCase()) +
 				this.author.toLowerCase().includes(string.toLowerCase());
   	}
 
